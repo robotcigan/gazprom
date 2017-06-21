@@ -1,0 +1,30 @@
+.slick
+  &-prev,
+  &-next
+    top 50%
+    &:before
+      font-size 2.4rem
+      color #fff
+      transition color .2s
+  &-prev
+    left -3rem
+    &:before
+      content '\f104'
+      font-family 'FontAwesome'
+  &-next
+    right -3rem
+    &:before
+      content '\f105'
+      font-family 'FontAwesome'
+
+.region-slider
+  .slick
+    &-prev,
+    &-next
+      top 35%
+      &:before
+        color $primary
+    &-prev
+      left -3rem
+    &-next
+      right -3rem

@@ -1,0 +1,39 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link Контакты
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Контакты для юридических лиц
+
+  .inner.grid.grid--container
+    .row
+      .col.col--sm-4
+        nav.sidebar
+          li: a(href="").sidebar__link Участки по работе с потребителями газа
+          li: a(href="").sidebar__link.sidebar__link--active Контакты для юридических лиц
+      .inner__block.col.col--sm-8
+        h1.h1 Контакты для юридических лиц
+        h3.h3 Отдел по реализации газа производственным потребителям
+        p Краснодар, ул. Ленина 40/1, кабинеты 6.2 и 6.10.
+        strong Телефоны:
+        p (861) 279-25-60;
+          br
+          | (861) 279-26-14;
+          br
+          | (861) 279-26-16;
+          br
+          | (861) 279-26-60.
+        p Так же по вопросам заключения договоров поставки газа следует обращаться на участки по работе с потребителями газа в соответствующих районах Краснодарского края.
+
+
+
+
+
+
+
+
+
+

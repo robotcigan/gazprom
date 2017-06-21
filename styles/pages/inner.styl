@@ -1,0 +1,113 @@
+.breadcrumbs
+  border-bottom $border
+  margin-bottom 6rem
+  padding 1.2rem 0
+  &__link
+    color $gray
+    font-size 1.4rem
+    position relative
+    line-height 1
+    margin-right 3.2rem
+    text-decoration none
+    text-transform uppercase
+    &:after
+      content '\f105'
+      font-family FontAwesome
+      position absolute
+      right -1.6rem
+      top 1px
+    &--active
+      font-weight 500
+      &:after
+        display none
+    &:hover
+      color $primary
+      &:after
+        color $gray
+
+.inner
+  margin-bottom 10rem
+
+.sidebar
+  border $border
+  border-radius $radius
+  padding 0
+  li
+    &:not(:last-child)
+      border-bottom $border
+  &__link
+    color $main
+    display block
+    font-size 1.4rem
+    line-height 1
+    padding 1.5rem 0
+    padding-left 2rem
+    text-decoration none
+    &:hover
+      color $primary
+    &--active
+      background-color #f1f5f8
+      &:hover
+        color $primary
+
+.tab-links
+  font-size 0
+  margin-bottom 4rem
+  .item
+    border-bottom 2px solid $light-gray
+    display inline-block
+    padding 0 1.2rem
+    transition border-color .2s
+    img
+      margin-bottom .8rem
+    &:hover:not(.item--active)
+      border-color rgba($primary, .3)
+    &--activem
+      border-color $primary
+
+.svg-map
+  margin-bottom 2rem
+  svg
+    height 50rem
+    width 100%
+    
+.alphabet
+  display flex
+  justify-content space-between
+  margin-bottom 4rem
+  &__link
+    color $main
+    font-size 2.2rem
+    text-decoration none
+    &:hover
+      color $primary
+
+.region-slider-container
+  padding 0 2.5rem
+  
+.region-slider
+  position relative
+  &:before,
+  &:after
+    background linear-gradient(to left, #fff, transparent)
+    content ''
+    position absolute
+    size(2rem, 2rem)
+    top 0
+  &:before
+    left -1.5rem
+    transform rotate(180deg)
+  &:after
+    right -1.5rem
+  .slick-slide
+    text-align center
+  &__link
+    color $main
+    display inline-block
+    border-bottom 1px solid rgba($main, .2)
+    text-decoration none
+    &.active,
+    &:hover
+      color $primary
+      border-color rgba($primary, .2)
+

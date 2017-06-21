@@ -1,0 +1,105 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    title Газпром
+    meta(name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="format-detection" content="telephone=no")
+    link(rel="stylesheet", href="styles/css/vendor.css")
+    link(rel="stylesheet", href="styles/css/main.css")
+  body
+
+    header.main-header
+      .grid.grid--container
+        .row.row--sm-center
+          .col.col--sm-2
+            a(href="./pages.html").logo
+          .col.col--sm-3.col--sm-offset-1
+            .main-header__contacts.contact
+              .contact__phone 8 (861) 262-04-74
+              .contact__trust Телефон доверия
+          .col.col--sm-5.col--sm-offset-1
+            nav.navbar
+              a.navbar__link(href="") О компании
+              a.navbar__link(href="") Новости
+              a.navbar__link(href="") Контакты
+    nav.navigation
+      .navigation__container.grid.grid--container
+        a(href="").navigation__link Физическим лицам
+        a(href="").navigation__link Юридическим лицам
+        a(href="").navigation__link Личный кабинет
+        .navigation__search.search
+          .search__icon
+            i.fa.fa-search
+
+
+    main
+      block content
+
+    footer.main-footer
+      .grid.grid--container
+        .row
+          .col.col--sm-4
+            .contact
+              .contact__phone 8 (861) 262-04-74
+              .contact__trust Телефон доверия
+          .col.col--sm-4
+            .main-footer__links.main-footer__links--type-1
+              .main-footer__link
+                a(href="") О компании
+              .main-footer__link
+                a(href="") Физическим лицам
+              .main-footer__link
+                a(href="") Юридическим лицам
+              .main-footer__link
+                a(href="") Новости
+              .main-footer__link
+                a(href="") Публикации в СМИ
+              .main-footer__link
+                a(href="") Контакты
+              .main-footer__link
+                a(href="") Клуб «Газпром на Кубани»
+              .main-footer__link
+                a(href="") Полезные ссылки
+          .col.col--sm-4
+            .main-footer__links.main-footer__links--type-2
+              .main-footer__link
+                a(href="") Руководство компании
+              .main-footer__link
+                a(href="") Сообщить показания счетчика
+              .main-footer__link
+                a(href="") Платежные сервисы
+              .main-footer__link
+                a(href="") Оформить электронную квитанцию
+              .main-footer__link
+                a(href="") Участки по работе с потребителями газа
+              .main-footer__link
+                a(href="") Вопрос-ответ
+              .main-footer__link
+                a(href="") Газ для населения
+              .main-footer__link
+                a(href="") Учет газа
+              .main-footer__link
+                a(href="") Объявления
+              .main-footer__link
+                a(href="") Вакансии
+
+      .main-footer__bottom
+        .grid.grid--container
+          .row
+            .col.col--sm-4
+              .wf Создание сайта —
+                a(href="").link Webformula
+            .col.col--sm-4
+              .copy &copy; 2000-2017 ООО «Газпром межрегионгаз Краснодар»
+            .col.col--sm-4
+              .sitemap-link
+                a(href="") Карта сайта
+
+
+    script(src="js/jquery.min.js")
+    script(src="js/slick.min.js")
+    script(src="js/jquery.magnific-popup.min.js")
+    script(src="js/jquery.easeScroll.js")
+    script(src="js/main.js")

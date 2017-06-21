@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic')
+
+@import 'helpers/variables.styl'
+@import 'helpers/mixins.styl'
+@import 'helpers/helpers.styl'
+
+@import 'base/base.styl'
+@import 'base/ui.styl'
+@import 'base/typography.styl'
+@import 'base/animations.styl'
+@import 'base/modal.styl'
+
+@import 'modifications/modifications.styl'
+
+@import 'pages/inner.styl'
+
+.grid--container
+  max-width 1144px
+
+// .row
+//   margin: 0 -1.5rem 1rem -1.5rem;
+
+// .col
+//   padding 0 1.5rem
+
+.logo
+  background url('../../img/logo.png') no-repeat
+  background-size contain
+  display block
+  size(10rem, 165px)
+
+.link
+  color $primary
+  border-bottom 1px solid rgba($primary, .2)
+  text-decoration none
+
+.main-header
+  color $main
+  margin-bottom 2rem
+  padding-top 1.5rem
+  &__contacts
+    transform translateY(1rem)
+  .navbar
+    transform translateY(1rem)
+    text-align right
+    &__link
+      border-bottom 1px solid rgba($main, .2)
+      color $main
+      display inline-block
+      font-size 1.8rem
+      font-weight 500
+      text-decoration none
+      text-align right
+      &:not(:last-child)
+        margin-right 8.5rem
+      &:hover
+        color $primary
+        border-color rgba($primary, .2)
+
+.contact
+  &__phone
+    font-size 2.4rem
+    font-weight 500
+    margin-bottom .3rem
+
+.hero
+  &__slide
+    height 40rem
+  &__img
+    background-position top center
+    background-size cover
+    background-repeat no-repeat
+    height 40rem
+    // padding 10rem 0
+    width 100%
+  &__container
+    transform translateY(10rem)
+    z-index 60
+  &__title
+    color #fff
+    font-size 4.8rem
+    font-weight 300
+    margin-bottom 3rem
+
+.navigation
+  background-color $primary
+  color #fff
+  &__container
+    display flex
+  &__link
+    border-left 1px solid #2687ce
+    border-rigth 1px solid #2687ce
+    color #fff
+    display block
+    font-size 1.6rem
+    font-weight 600
+    line-height 1
+    padding 2rem
+    text-align center
+    text-transform uppercase
+    text-decoration none
+    transition all .2s
+    width 100%
+    &:hover
+      background-color #fff
+      color $primary
+  &__search
+    .search
+      &__icon
+        background-color #0069b7
+        cursor pointer
+        height 100%
+        text-align center
+        width 6rem
+        .fa
+          font-size 2rem
+          transform translateY(1.8rem)
+
+
+.gray-block
+  background-color #f1f5f8
+
+.actions
+  .action
+    align-items center
+    background-color #fff
+    border $border
+    border-bottom none
+    display flex
+    justify-content center
+    min-height 23rem
+    text-align center
+    text-decoration none
+    min-width 23rem
+    &__img
+      margin-bottom 2rem
+    &__name
+      color $gray
+      font-size 1.4rem
+      font-weight 600
+      text-transform uppercase
+    &--last
+      border-bottom $border
+
+.date
+  float left
+  margin-right 4rem
+  text-align right
+  &__number
+    font-size 2.4rem
+    font-weight 600
+  &__month
+    color $gray
+
+.news
+  margin-top 6rem
+  &__list
+    height 62.5rem
+    overflow auto
+  &__item
+    background-color #fff
+    clearfix()
+    margin-bottom 2rem
+    .item
+      &__img
+        background-size cover
+        background-position 50%
+        height 25rem
+      &__container
+        padding 4rem
+      &__title
+        border-bottom 1px solid rgba($main, .2)
+        color $main
+        display inline
+        line-height 1.6
+        text-decoration none
+
+.actual
+  background $primary url('../../img/pattern.png')
+  color #fff
+  padding 4rem 0
+
+.main-footer
+  border-top $border
+  padding-top 6rem
+  &__link
+    display block
+    a
+      color $main
+      display inline-block
+      text-decoration none
+  &__links
+    &--type-1
+      .main-footer
+        &__link
+          margin-bottom 1rem
+          a
+            border-bottom 1px solid rgba($main, .2)
+            font-size 1.8rem
+            font-weight 500
+
+    &--type-2
+      .main-footer
+        &__link
+          margin-bottom .6rem
+          a
+            font-size 1.4rem
+  
+  &__bottom
+    // margin-bottom 5rem
+    margin-top 4rem
+    .grid--container
+      border-top $border
+      padding 4.5rem 0
+
+.wf
+  font-size 1.4rem
+
+.copy
+  color $gray
+  font-size 1.4rem
+
+.sitemap-link
+  text-align right
+  a
+    color $gray
+    font-size 1.4rem
+    text-decoration none
+    &:hover
+      color $primary
+
+@import 'base/media.styl'
+
+
