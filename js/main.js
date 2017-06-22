@@ -3,7 +3,10 @@ $(document).ready(function() {
   // Плавный скролл
   $("html").easeScroll();
 
-  $('.hero__slider').slick();
+  $('.hero__slider').slick({
+    dots: false,
+    arrows: false
+  });
 
   // Обычный слайдер (главная)
   $('.slider').slick({
@@ -70,5 +73,10 @@ $(document).ready(function() {
       }
     ]
   });
+
+  // мобильное меню
+  $('.mobile-menu-toggle').on('click', function () {
+    $(this).toggleClass('mobile-menu-toggle--active');
+  })
 
 })

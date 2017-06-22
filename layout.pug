@@ -10,12 +10,23 @@ html(lang="ru")
     link(rel="stylesheet", href="styles/css/main.css")
   body
 
+    header.mobile-header
+      .grid.grid--container
+        .row.row--sm-center
+          .col.col--xs-6
+            .logo.logo--white
+          .col.col--xs-6
+            .mobile-menu-toggle
+              span
+              span
+              span
+
     header.main-header
       .grid.grid--container
         .row.row--sm-center
           .col.col--sm-2
             a(href="./pages.html").logo
-          .col.col--sm-3.col--sm-offset-1
+          .col.col--sm-3.col--xl-offset-1
             .main-header__contacts.contact
               .contact__phone 8 (861) 262-04-74
               .contact__trust Телефон доверия
@@ -24,6 +35,7 @@ html(lang="ru")
               a.navbar__link(href="") О компании
               a.navbar__link(href="") Новости
               a.navbar__link(href="") Контакты
+
     nav.navigation
       .navigation__container.grid.grid--container
         a(href="").navigation__link Физическим лицам
@@ -44,6 +56,7 @@ html(lang="ru")
             .contact
               .contact__phone 8 (861) 262-04-74
               .contact__trust Телефон доверия
+              .contact__email Эл. почта: krasnodarrg@krk-rg.ru
           .col.col--sm-4
             .main-footer__links.main-footer__links--type-1
               .main-footer__link

@@ -1,0 +1,57 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link О компании
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Руководство
+
+  .inner.grid.grid--container
+    .row
+      .col.col--md-4
+        nav.sidebar
+          li: a(href="").sidebar__link.sidebar__link--active Руководство
+          li: a(href="").sidebar__link Документация
+      .inner__block.col.col--md-8
+        h1.h1 Руководство
+        .team-list
+          .team
+            .team__img
+              img(src="img/агафонов.png", alt="")
+            .team__container
+              .team__name Агафонов Владимир Александрович
+              .team__role Генеральный директор
+          .team
+            .team__img
+              img(src="img/подлесный.png", alt="")
+            .team__container
+              .team__name Подлесный Сергей Владимирович
+              .team__role Заместитель генерального директора по реализации газа
+          .team
+            .team__img
+              img(src="img/буряк.png", alt="")
+            .team__container
+              .team__name Буряк Кирилл Иванович
+              .team__role Заместитель генерального директора по экономике и финансам
+          .team
+            .team__img
+              img(src="img/кутьина.png", alt="")
+            .team__container
+              .team__name Кутьина Светлана Алексеевна
+              .team__role Главный бухгалтер
+          .team
+            .team__img
+              img(src="img/ермаков.png", alt="")
+            .team__container
+              .team__name Ермаков Алексей Федорович
+              .team__role Заместитель генерального директора по работе с органами власти и бюджетными организациями
+          .team
+            .team__img
+              img(src="img/чеботков.png", alt="")
+            .team__container
+              .team__name Чеботков Евгений Александрович
+              .team__role Заместитель генерального директора по общим вопросам
+
+

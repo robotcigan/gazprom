@@ -27,28 +27,44 @@
 
 .inner
   margin-bottom 10rem
+  &__img
+    margin-bottom 4rem
+    img
+      max-width 100%
 
 .sidebar
   border $border
   border-radius $radius
   padding 0
-  li
-    &:not(:last-child)
-      border-bottom $border
+  & > li:last-child
+    .sidebar__link
+      border-bottom none
   &__link
+    border-bottom $border
     color $main
     display block
     font-size 1.4rem
-    line-height 1
-    padding 1.5rem 0
+    line-height $line-height
+    padding 1.2rem 0
     padding-left 2rem
+    padding-right 2rem
     text-decoration none
     &:hover
       color $primary
     &--active
       background-color #f1f5f8
+      color $primary
       &:hover
         color $primary
+  ul
+    list-style-type none
+    margin 0
+    padding 0
+    .sidebar__link
+      padding-left 4rem
+    ul
+      .sidebar__link
+        padding-left 6rem
 
 .tab-links
   font-size 0
@@ -62,7 +78,7 @@
       margin-bottom .8rem
     &:hover:not(.item--active)
       border-color rgba($primary, .3)
-    &--activem
+    &--active
       border-color $primary
 
 .svg-map
@@ -86,14 +102,17 @@
   padding 0 2.5rem
   
 .region-slider
+  margin-bottom 6rem
   position relative
   &:before,
   &:after
-    background linear-gradient(to left, #fff, transparent)
+    // background linear-gradient(to left, red, rgba(#fff, 0))
+    background url('../../img/white-shadow.png')
     content ''
     position absolute
-    size(2rem, 2rem)
+    size(2rem, 3rem)
     top 0
+    z-index 50
   &:before
     left -1.5rem
     transform rotate(180deg)
@@ -106,8 +125,60 @@
     display inline-block
     border-bottom 1px solid rgba($main, .2)
     text-decoration none
-    &.active,
+    &--active,
     &:hover
       color $primary
       border-color rgba($primary, .2)
+
+
+.file
+  align-items flex-start
+  display flex
+  margin-bottom 3rem
+  &__icon
+    margin-right 2rem
+    transform translateY(.8rem)
+  &__name
+    color $primary
+    border-bottom 1px solid rgba($primary, .2)
+    display inline
+    font-weight 300
+    line-height $line-height
+    text-decoration none
+  &__size
+    color $gray
+    font-weight 300
+    margin-top 1rem
+
+.team-list
+  .team
+    display flex
+    margin-bottom 4rem
+    &__img
+      img
+        display block
+    &__container
+      margin-left 3rem
+      padding-top 2rem
+    &__name
+      color $primary
+      font-size 2.2rem
+      margin-bottom 2rem
+    &__role
+      font-weight 300
+      line-height $line-height
+
+
+@media(max-width 767px)
+  .sidebar
+    margin-bottom 6rem
+
+@media(max-width 500px)
+  .team-list
+    .team
+      flex-direction column
+      &__container
+        margin 0
+
+
 

@@ -10,11 +10,23 @@
     <link rel="stylesheet" href="styles/css/main.css">
   </head>
   <body>
+    <header class="mobile-header">
+      <div class="grid grid--container">
+        <div class="row row--sm-center">
+          <div class="col col--xs-6">
+            <div class="logo logo--white"></div>
+          </div>
+          <div class="col col--xs-6">
+            <div class="mobile-menu-toggle"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </div>
+    </header>
     <header class="main-header">
       <div class="grid grid--container">
         <div class="row row--sm-center">
           <div class="col col--sm-2"><a class="logo" href="./pages.html"></a></div>
-          <div class="col col--sm-3 col--sm-offset-1">
+          <div class="col col--sm-3 col--xl-offset-1">
             <div class="main-header__contacts contact">
               <div class="contact__phone">8 (861) 262-04-74</div>
               <div class="contact__trust">Телефон доверия</div>
@@ -41,23 +53,37 @@
       </div>
       <div class="inner grid grid--container">
         <div class="row">
-          <div class="col col--sm-4">
+          <div class="col col--md-4">
             <nav class="sidebar">
               <li><a class="sidebar__link" href="">Главная</a></li>
               <li><a class="sidebar__link sidebar__link--active" href="">Участки по работе с потребителями газа</a></li>
             </nav>
           </div>
-          <div class="inner__block col col--sm-8">
+          <div class="inner__block col col--md-8">
             <h1 class="h1">Участки по работе с потребителями газа</h1>
-            <div class="tab-links"><a class="item item--active" href=""><img src="img/placeholder.png" alt=""></a><a class="item" href=""><img style="transform: translateY(-3px);" src="img/list-typebar.png" alt=""></a></div>
+            <div class="tab-links"><a class="item" href=""><img src="img/placeholder.png" alt=""></a><a class="item item--active" href=""><img style="transform: translateY(-3px);" src="img/list-typebar.png" alt=""></a></div>
             <div class="alphabet"><a class="alphabet__link" href="">А</a><a class="alphabet__link" href="">Б</a><a class="alphabet__link" href="">В</a><a class="alphabet__link" href="">Г</a><a class="alphabet__link" href="">Д</a><a class="alphabet__link" href="">Е</a><a class="alphabet__link" href="">К</a><a class="alphabet__link" href="">Л</a><a class="alphabet__link" href="">М</a><a class="alphabet__link" href="">Н</a><a class="alphabet__link" href="">О</a><a class="alphabet__link" href="">П</a><a class="alphabet__link" href="">С</a><a class="alphabet__link" href="">Т</a><a class="alphabet__link" href="">У</a><a class="alphabet__link" href="">Щ</a></div>
             <div class="region-slider-container">
               <div class="region-slider">
                 <div class="region-slider__slide"><a class="region-slider__link" href="">Кавказский район</a></div>
-                <div class="region-slider__slide"><a class="region-slider__link" href="">Калининский район</a></div>
+                <div class="region-slider__slide"><a class="region-slider__link region-slider__link--active" href="">Калининский район</a></div>
                 <div class="region-slider__slide"><a class="region-slider__link" href="">Каневской район</a></div>
                 <div class="region-slider__slide"><a class="region-slider__link" href="">Кореновский район</a></div>
                 <div class="region-slider__slide"><a class="region-slider__link" href="">Кореновский район</a></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col--sm-3"><img src="img/contacts_areas_list.jpg" alt=""></div>
+              <div class="col col--sm-9">
+                <h3 class="h3">Калининский район</h3>
+                <p>начальник участка <strong>Пробейголова Игорь Юрьевич</strong></p>
+                <p>Тел.: (86151) 7-70-93. <br>Прием: четверг, пятница с 10-00 до 12-00.</p>
+                <p class="text-primary">Участок обеспечивает газом <br>11 180 домохозяйств, <br>225 промышленных и коммунально-бытовых объектов.<br>Ежегодный объем поставки газа, в среднем, составляет 37,1 млн. м3</p>
+                <p>353620, Краснодарский край, Щербиновский р-н, ст. Старощербиновская, ул. Первомайская, 87.</p><strong>Часы приема: </strong>
+                <p>понедельник-четверг с 8-30 до 16-30, <br>пятница с 8-30 до 16-45, <br>перерыв с 12-00 до 12-45.</p><strong>Телефоны отделов:</strong>
+                <p>(86151) 7-76-32 - абонентский отдел;<br>(86151) 7-76-32 - юрист;<br>(86151) 7-73-45 - промышленный отдел.</p><strong>Телефоны для передачи показаний прибора учета:</strong>
+                <p>(86151) 7-76-32; 8-988-356-04-62</p>
+                <p>Эл. почта: <span class="text-primary">str_uch23@mail.kuban.ru</span></p>
               </div>
             </div>
           </div>
@@ -71,6 +97,7 @@
             <div class="contact">
               <div class="contact__phone">8 (861) 262-04-74</div>
               <div class="contact__trust">Телефон доверия</div>
+              <div class="contact__email">Эл. почта: krasnodarrg@krk-rg.ru</div>
             </div>
           </div>
           <div class="col col--sm-4">

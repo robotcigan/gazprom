@@ -1,0 +1,62 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link О компании
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Документация
+
+  .inner.grid.grid--container
+    .row
+      .col.col--md-4
+        nav.sidebar
+          li: a(href="").sidebar__link Руководство
+          li: a(href="").sidebar__link.sidebar__link--active Документация
+      .inner__block.col.col--md-8
+        h1.h1 Документация
+        .row
+          .col.col--sm-6
+            .file
+              .file__icon
+                img(src="img/pdf-file.png", alt="")
+              .file__content
+                a(href="" download).file__name Свидетельство о постановке на налоговый учет
+                .file__size (PDF, 774 КБ)
+            .file
+              .file__icon
+                img(src="img/pdf-file.png", alt="")
+              .file__content
+                a(href="" download).file__name Устав
+                .file__size (PDF, 774 КБ)
+            .file
+              .file__icon
+                img(src="img/pdf-file.png", alt="")
+              .file__content
+                a(href="" download).file__name Политика обработки персональных данных
+                .file__size (PDF, 774 КБ)
+          .col.col--sm-6
+            .file
+              .file__icon
+                img(src="img/pdf-file.png", alt="")
+              .file__content
+                a(href="" download).file__name Свидетельство о внесении записи в ЕГРЮЛ
+                .file__size (PDF, 774 КБ)
+            .file
+              .file__icon
+                img(src="img/pdf-file.png", alt="")
+              .file__content
+                a(href="" download).file__name Реквизиты
+                .file__size (PDF, 774 КБ)
+            .file
+              .file__icon
+                img(src="img/pdf-file.png", alt="")
+              .file__content
+                a(href="" download).file__name Политика в области охраны труда
+                .file__size (PDF, 774 КБ)
+
+
+
+
+

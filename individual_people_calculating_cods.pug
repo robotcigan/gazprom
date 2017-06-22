@@ -1,0 +1,175 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link Физическим лицам
+        a(href="").breadcrumbs__link Населению
+        a(href="").breadcrumbs__link Порядок расчетов за газ
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Территориальные коды лицевых счетов
+
+  .inner.grid.grid--container
+    .row
+      .col.col--md-4
+        nav.sidebar
+          li: a(href="").sidebar__link Сообщить показания счетчика
+          li: a(href="").sidebar__link Платежные сервисы
+          li: a(href="").sidebar__link Оформить электронную квитанцию
+          li
+            a(href="").sidebar__link.sidebar__link--active Населению
+            ul
+              li: a(href="").sidebar__link Цены и тарифы
+              li: a(href="").sidebar__link Порядок заключения договоров
+              li
+                a(href="").sidebar__link.sidebar__link--active Порядок расчетов за газ
+                ul
+                  li: a(href="").sidebar__link.sidebar__link--active Территориальные коды лицевых счетов
+                  li: a(href="").sidebar__link Образцы заполненных квитанций
+                  li: a(href="").sidebar__link Начисление пени
+              li: a(href="").sidebar__link Порядок ограничения поставок газа
+              li: a(href="").sidebar__link Договор ТО ВДГО
+              li: a(href="").sidebar__link Согласие на обработку персональных данных
+          li: a(href="").sidebar__link Газ для новичков
+          li: a(href="").sidebar__link Учет газа
+          li: a(href="").sidebar__link Газификация домовладения
+      .inner__block.col.col--md-8
+        h1.h1 Территориальные коды лицевых счетов
+        p Для точного оформления платежа за газ необходимо правильно указывать лицевой счет абонента.
+        p Все лицевые счета абонентов "Газпром межрегионгаз Краснодар" 12-значные.
+        p Если в абонентской книжке указан десятизначный номер, то перед ним необходимо добавить две цифры территориального кода в соответствии с таблицей:
+        table.table
+          thead
+            th Муниципальное образование
+            th Код
+          tbody
+            tr
+              td Абинский район
+              td 1
+            tr
+              td г-к Анапа
+              td 2
+            tr
+              td Апшеронский район
+              td 3
+            tr
+              td г. Армавир
+              td 4
+            tr
+              td Белоглинский район
+              td 5
+            tr
+              td Белореченский район
+              td 6
+            tr
+              td Брюховецкий район
+              td 7
+            tr
+              td Выселковский район
+              td 8
+            tr
+              td г-к Геленджик
+              td 9
+            tr
+              td г-к Горячий ключ
+              td 10
+            tr
+              td Гулькевичский район
+              td 11
+            tr
+              td Динской район
+              td 12
+            tr
+              td Ейский район
+              td 13
+            tr
+              td Калининский район
+              td 14
+            tr
+              td Каневской район
+              td 15
+            tr
+              td Кореновский район
+              td 16
+            tr
+              td Красноармейский район
+              td 17
+            tr
+              td Кавказский район
+              td 18
+            tr
+              td Крыловской район
+              td 19
+            tr
+              td Крымский район
+              td 20
+            tr
+              td Курганинский район
+              td 21
+            tr
+              td Кущевский район
+              td 22
+            tr
+              td Лабинский район
+              td 23
+            tr
+              td Ленинградский район
+              td 24
+            tr
+              td Мостовской район
+              td 25
+            tr
+              td Новокубанский район
+              td 26
+            tr
+              td Новопокровский район
+              td 27
+            tr
+              td Новопокровский район
+              td 28
+            tr
+              td Отрадненский район
+              td 29
+            tr
+              td Павловский район
+              td 30
+            tr
+              td Приморско-Ахтарский район
+              td 31
+            tr
+              td Северский район
+              td 32
+            tr
+              td г-к Сочи
+              td 33
+            tr
+              td Староминский район
+              td 34
+            tr
+              td Тбилисский район
+              td 35
+            tr
+              td Темрюкский район
+              td 36
+            tr
+              td Тимашевский район
+              td 37
+            tr
+              td Тихорецкий район
+              td 38
+            tr
+              td Туапсинский район
+              td 39
+            tr
+              td Успенский район
+              td 40
+            tr
+              td Щербиновский район
+              td 41
+            tr
+              td Славянский район
+              td 42
+            tr
+              td Усть-Лабинский район
+              td 43

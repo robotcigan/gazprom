@@ -6,6 +6,7 @@
 
 @import 'base/base.styl'
 @import 'base/ui.styl'
+@import 'base/table.styl'
 @import 'base/typography.styl'
 @import 'base/animations.styl'
 @import 'base/modal.styl'
@@ -39,7 +40,7 @@
   margin-bottom 2rem
   padding-top 1.5rem
   &__contacts
-    transform translateY(1rem)
+    transform translateY(2.2rem)
   .navbar
     transform translateY(1rem)
     text-align right
@@ -61,7 +62,12 @@
   &__phone
     font-size 2.4rem
     font-weight 500
-    margin-bottom .3rem
+    margin-bottom .5rem
+  &__trust
+    font-size 1.4rem
+    margin-bottom 3rem
+  &__email
+    font-size 1.4rem
 
 .hero
   &__slide
@@ -74,6 +80,7 @@
     // padding 10rem 0
     width 100%
   &__container
+    opacity 0
     transform translateY(10rem)
     z-index 60
   &__title
@@ -81,6 +88,13 @@
     font-size 4.8rem
     font-weight 300
     margin-bottom 3rem
+  &__slider
+    opacity 0
+    transition all 1s
+    &.slick-initialized
+      opacity 1
+      .hero__container
+        animation fade .4s 1s ease forwards
 
 .navigation
   background-color $primary
