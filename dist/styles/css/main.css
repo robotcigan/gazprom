@@ -570,6 +570,20 @@ p {
   font-weight: 300;
   line-height: 1.875;
 }
+.link-block {
+  margin-bottom: 3.5rem;
+}
+.link-block__link {
+  color: #2e3336;
+  display: inline-block;
+  font-style: 1.8rem;
+  font-weight: 500;
+  padding: 2rem;
+  text-decoration: none;
+}
+.link-block__link--active {
+  background-color: #e6ecf2;
+}
 @media (max-width: 767px) {
   .sidebar {
     margin-bottom: 6rem;
@@ -709,6 +723,9 @@ p {
   background-color: #fff;
   color: #007ac2;
 }
+.navigation__link--active {
+  background-color: #006eaf;
+}
 .navigation__search .search__icon {
   background-color: #0069b7;
   cursor: pointer;
@@ -817,6 +834,10 @@ p {
   color: #2e3336;
   display: inline-block;
   text-decoration: none;
+}
+.main-footer__link a:hover {
+  border-color: rgba(0,122,194,0.2) !important;
+  color: #007ac2;
 }
 .main-footer__links--type-1 .main-footer__link {
   margin-bottom: 1rem;

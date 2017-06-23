@@ -1,0 +1,62 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link Физическим лицам
+        a(href="").breadcrumbs__link Населению
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Цены и тарифы
+
+  .inner.grid.grid--container
+    .row
+      .col.col--md-4
+        nav.sidebar
+          li: a(href="").sidebar__link Сообщить показания счетчика
+          li: a(href="").sidebar__link Платежные сервисы
+          li: a(href="").sidebar__link Оформить электронную квитанцию
+          li
+            a(href="").sidebar__link.sidebar__link--active Населению
+            ul
+              li: a(href="").sidebar__link.sidebar__link--active Цены и тарифы
+              li: a(href="").sidebar__link Порядок заключения договоров
+              li: a(href="").sidebar__link Порядок расчетов за газ
+              li: a(href="").sidebar__link Порядок ограничения поставок газа
+              li: a(href="").sidebar__link Договор ТО ВДГО
+              li: a(href="").sidebar__link Согласие на обработку персональных данных
+          li: a(href="").sidebar__link Газ для новичков
+          li: a(href="").sidebar__link Учет газа
+          li: a(href="").sidebar__link Газификация домовладения
+      .inner__block.col.col--md-8
+        h1.h1 Цены и тарифы
+        .link-block
+          a(href="").link-block__link.link-block__link--active 15 июня 2016 г.
+          a(href="").link-block__link 18 июня 2015 г.
+          a(href="").link-block__link 17 июня 2014 г.
+        p.text-info Розничные цены на природный газ, реализуемый населению Краснодарского края, устанавливаются уполномоченным органом исполнительной власти администрации Краснодарского края — региональной энергетической комиссией — департаментом цен и тарифов Краснодарского края.
+        p Приказом региональной энергетической комиссии - департамента цен и тарифов Краснодарского края  № 10/2016 - газ от 15 июня 2016 г. для абонентов ООО «Газпром межрегионгаз Краснодар» установлена розничная цена газа в размере 5810 руб. за 1000 куб. м.
+        ul.ul-offset
+          li: span для жителей Усть-Лабинского района с 1 июля цена за 1000 м3 газа — 5300 руб.;
+          li: span для жителей  Славянского района с 1 июля цена за 1000 м3 газа — 5520 руб.
+        table.table
+          thead
+            th Период действия
+            th руб./ куб. м. с НДС
+          tbody
+            tr
+              td 01.07.2016 г.
+              td 5,81
+            tr
+              td с 01.07.2016 г. для жителей Усть-Лабинского района 
+              td 5,3
+            tr
+              td с 01.07.2016 г. для жителей Славянского района
+              td 5,52
+
+
+
+
+
+
+

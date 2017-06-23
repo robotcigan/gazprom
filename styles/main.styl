@@ -118,6 +118,8 @@
     &:hover
       background-color #fff
       color $primary
+    &--active
+      background-color $primary - 10%
   &__search
     .search
       &__icon
@@ -203,6 +205,9 @@
       color $main
       display inline-block
       text-decoration none
+      &:hover
+        border-color rgba($primary, .2) !important
+        color $primary
   &__links
     &--type-1
       .main-footer

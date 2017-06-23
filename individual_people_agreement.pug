@@ -1,0 +1,48 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link Физическим лицам
+        a(href="").breadcrumbs__link Населению
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Согласие на обработку персональных данных
+
+  .inner.grid.grid--container
+    .row
+      .col.col--md-4
+        nav.sidebar
+          li: a(href="").sidebar__link Сообщить показания счетчика
+          li: a(href="").sidebar__link Платежные сервисы
+          li: a(href="").sidebar__link Оформить электронную квитанцию
+          li
+            a(href="").sidebar__link.sidebar__link--active Населению
+            ul
+              li: a(href="").sidebar__link Цены и тарифы
+              li: a(href="").sidebar__link Порядок заключения договоров
+              li: a(href="").sidebar__link Порядок расчетов за газ
+              li: a(href="").sidebar__link Порядок ограничения поставок газа
+              li: a(href="").sidebar__link Договор ТО ВДГО
+              li: a(href="").sidebar__link.sidebar__link--active Согласие на обработку персональных данных
+          li: a(href="").sidebar__link Газ для новичков
+          li: a(href="").sidebar__link Учет газа
+          li: a(href="").sidebar__link Газификация домовладения
+      .inner__block.col.col--md-8
+        h1.h1 Согласие на обработку персональных данных
+        p В соответствии с Федеральным Законом №152-ФЗ от 27.07.2006г. «О персональных данных», для дальнейшего  осуществления приема платежей за потребленный газ не только в кассах ООО «Газпром межрегионгаз Краснодар», но и через контрагентов (ФГУ Почта России, банки  и т.п.), а также - для почтовых и электронных рассылок уведомлений о состоянии расчётов за газ, исполнения других условий договора поставки природного газа, "Газпром межрегионгаз Краснодар" необходимо получить от абонентов согласие на обработку их персональных данных.
+        p Форму согласия необходимо распечатать, заполнить самостоятельно и предоставить на Участок по работе с потребителями газа в Вашем районе лично или отправить почтой. Адреса участков указаны на странице сайта 
+          a(href="").link http://www.krasnodarrg.ru/about/map/
+        .file
+          .file__icon
+            img(src="img/pdf-file.png", alt="")
+          .file__content
+            a(href="" download).file__name Форма согласия
+            .file__size (PDF, 774 КБ)
+
+
+
+
+
+
+
