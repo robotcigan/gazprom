@@ -1,7 +1,7 @@
 .breadcrumbs
   border-bottom $border
   margin-bottom 6rem
-  padding 1.2rem 0
+  padding 1.5rem 0
   &__link
     color $gray
     font-size 1.4rem
@@ -28,9 +28,18 @@
 .inner
   margin-bottom 10rem
   &__img
+    display block
     margin-bottom 4rem
     img
+      display block
       max-width 100%
+    &--full
+      margin-bottom 1rem
+      img
+        width 100%
+  &__header
+    display flex
+    justify-content space-between
 
 .sidebar
   border $border
@@ -98,10 +107,10 @@
     &:hover
       color $primary
 
-.region-slider-container
+.inner-text-slider-container
   padding 0 2.5rem
-  
-.region-slider
+
+.inner-text-slider
   margin-bottom 6rem
   position relative
   &:before,
@@ -124,11 +133,14 @@
     color $main
     display inline-block
     border-bottom 1px solid rgba($main, .2)
+    margin-right 4rem
     text-decoration none
     &--active,
     &:hover
       color $primary
       border-color rgba($primary, .2)
+  .slick-list
+    padding-left 2rem
 
 
 .file
@@ -180,10 +192,115 @@
     &--active
       background-color $light-gray
 
+.well
+  background-color $light-gray
+  border-radius $radius
+  padding 4rem 0
+  text-align center
+  p
+    margin 0
+    margin-bottom 3rem
+
+.services
+  .service
+    align-items center
+    border $border
+    display flex
+    justify-content center
+    height 9rem
+    margin-bottom 2rem
+    text-decoration none
+
+.accordion
+  &:last-child
+    .accordion
+      &__header
+        border-bottom $border
+  &__header
+    border-top $border
+    cursor pointer
+    font-size 2.2rem
+    line-height 1.6
+    padding 2.5rem 0
+    padding-right 4rem
+    position relative
+    &:hover
+      .accordion
+        &__arrow
+          border-color $primary
+          .fa
+            color $primary
+  &__arrow
+    border $border
+    border-radius 50%
+    circle(4rem)
+    cursor pointer
+    display inline-block
+    position absolute
+    top 2rem
+    text-align center
+    transition border-color .4s, transform .2s
+    right 0
+    .fa
+      color $gray
+      display inline-block
+      font-size 2.2rem
+      transition all .4s
+    &--active
+      .fa
+        transform rotate(180deg) translateY(1px)
+  &__body
+    display none
+    margin-top 3rem
+    padding-right 4rem
+  &--small-header
+    .accordion
+      &__header
+        font-size 1.8rem
+
+.pagination
+  display inline-block
+  vertical-align top
+  &__link
+    color $main
+    display inline-block
+    font-weight 500
+    margin-right 1rem
+    padding-top 2rem
+    size(6rem, 4rem)
+    text-align center
+    text-decoration none
+    &:hover
+      background-color rgba($light-gray, .2)
+    &--active
+      background-color $light-gray
+
+.aside-block
+  margin-top 9rem
+
+.special-link
+  display block
+  margin-bottom 4rem
+  &__link
+    link-type-2()
+    font-weight 300
+    margin-right 1rem
+  &__icon
+    background url('../../img/special-link-icon.png') no-repeat
+    background-size 100%
+    circle(17px)
+    display inline-block
+    vertical-align middle
 
 @media(max-width 767px)
   .sidebar
     margin-bottom 6rem
+
+@media(max-width 701px)
+  .btn + .pagination
+    display block
+    margin-left 0
+    margin-top 2rem
 
 @media(max-width 500px)
   .team-list
@@ -191,6 +308,12 @@
       flex-direction column
       &__container
         margin 0
-
+  .inner__header
+    flex-direction column
+    .btn
+      text-align center
+  .news
+    .new
+      display block
 
 

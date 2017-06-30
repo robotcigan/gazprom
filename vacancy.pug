@@ -1,0 +1,50 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Вакансии
+
+  .inner.grid.grid--container
+    .inner__block
+      h1.h1 Вакансии
+      .accordion
+        .accordion__header
+          span Оператор ЧПУ
+          .accordion__arrow
+            i.fa.fa-angle-down
+        .accordion__body
+          strong Заработная плата:
+          p от 70 000 до 75 000 руб., опыт работы от 3 до 6 лет
+          strong Должностные обязанности:
+          p Ведение процесса обработки с пульта управления сложных деталей по 6-7 квалитетам на станках с программным управлением
+          ul.ul-offset
+            li: span вахта 60/30;
+            li: span график 6/1 по 12 часов (есть возможность подработки);
+            li: span заработная плата от 70 000 рублей;
+            li: span квартиру предоставляем бесплатно;
+            li: span спецодежду бесплатно с 1-ой вахты;
+            li: span проезд оплачиваем со 2-ой вахты;
+            li: span авансы выплачиваются 15 и 30 числа каждого месяца (первый аванс выплачивается при условии отработки не менее 10 дней);
+            li: span выплата зарплаты: с 25-го по 30-е число месяца, следующего за отработанным, на карточку СБЕРБАНКА.
+          p Работа вахтовым методом на территории работодателя.
+
+      .accordion
+        .accordion__header
+          span Бухгалтер
+          .accordion__arrow
+            i.fa.fa-angle-down
+        .accordion__body
+          p текст
+
+      .accordion
+        .accordion__header
+          span Ведущий эксперт (реализация сделок с иностранными партнёрами)
+          .accordion__arrow
+            i.fa.fa-angle-down
+        .accordion__body
+          p текст
+
+

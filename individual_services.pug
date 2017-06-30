@@ -1,0 +1,66 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link Физическим лицам
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Платежные сервисы
+
+  .inner.grid.grid--container
+    .row
+      .col.col--md-4
+        nav.sidebar
+          li: a(href="").sidebar__link Сообщить показания счетчика
+          li: a(href="").sidebar__link.sidebar__link--active Платежные сервисы
+          li: a(href="").sidebar__link Оформить электронную квитанцию
+          li: a(href="").sidebar__link Населению
+          li: a(href="").sidebar__link Газ для новичков
+          li: a(href="").sidebar__link Учет газа
+          li: a(href="").sidebar__link Газификация домовладения
+      .inner__block.col.col--md-8
+        h1.h1 Оформить электронную квитанцию
+        h3.h3 Реквизиты для оплаты газа
+        p Корр. счет: 30101810100000000602
+          br
+          | ИНН: 2308070396 ООО
+          br
+          | Р/С 40702810630020102442
+          br
+          | БИК: 040349602
+        
+        p Потребитель имеет право платить как наличными деньгами, так и безналичным способом.
+        h3.h3 Платежи без комиссии принимаются
+        ul
+          li: span В офисах районных участков «Газпром межрегионгаз Краснодар»
+          li: span В офисах агентов поставщика:
+          .row.services
+            - for (var i = 1; i < 7; i ++)
+              .col.col--lg-3
+                a(href="").service
+                  img(src="img/services/" + i + ".jpg", alt="")
+          li: span Через терминалы самообслуживания:
+          .row.services
+            - for (var i = 7; i < 10; i ++)
+              .col.col--lg-3
+                a(href="").service
+                  img(src="img/services/" + i + ".jpg", alt="")
+          li: span Через интернет-сервисы:
+          .row.services
+            - for (var i = 10; i < 12; i ++)
+              .col.col--lg-3
+                a(href="").service
+                  img(src="img/services/" + i + ".jpg", alt="")
+          li: span Через банкоматы:
+          .row.services
+            - for (var i = 12; i < 18; i ++)
+              .col.col--lg-3
+                a(href="").service
+                  img(src="img/services/" + i + ".jpg", alt="")
+
+        p.text-info Обращаем внимание абонентов, что при оплате необходимо указывать полный 12-значный лицевой счет. Электронные системы платежей сокращенные лицевые счета не принимают!
+        h4.h4 Будьте внимательны!
+        p Если при оплате через терминал или интернет-сервис Вы не заполняете форму "Текущие и Предыдущие показания счетчика" (форма отсутствует в некоторых сервисах), Вам обязательно необходимо передать в «Газпром межрегионгаз Краснодар» показания любым удобным способом (по телефону, через наш сайт и т.д.)
+
+

@@ -1,0 +1,28 @@
+.news
+  .new
+    display flex
+    margin-bottom 4rem
+    .date
+      transform translateY(.5rem)
+    &__title
+      border-bottom 1px solid rgba($main, .2)
+      color $main
+      display inline
+      font-size 2.2rem
+      line-height (36 / 22)
+      margin-bottom 1rem
+      text-decoration none
+      transition all .2s
+      &:hover
+        color $primary
+        border-color rgba($primary, .2)
+    &__anons
+      font-weight 300
+      line-height $line-height
+      margin-top 1rem
+    &__img
+      flex-shrink 0
+      text-align center
+      width 7.5rem
+      img
+        transform translateY(.8rem)

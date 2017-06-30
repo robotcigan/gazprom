@@ -3,6 +3,9 @@
 // html.mobile-menu-was-open
 //   overflow hidden
 
+@media (max-width: 767px)
+  .row
+    margin 0 -2%
 
 .mobile-header
   background-color $primary
@@ -30,7 +33,7 @@
   &:before
     // background-color rgba(#fff, .97)
     content ''
-    left -2.4rem
+    left -3.5rem
     position absolute
     top -3rem
     circle(8rem)
@@ -58,6 +61,55 @@
         transform rotate(-45deg)
         top 5px
 
+.mobile-menu
+  background-color $primary
+  color #fff
+  display none
+  border-top 1px solid rgba(#fff, .1)
+  padding-bottom 4rem
+  padding-top 4rem
+  &__links
+    display block
+    margin-bottom 4rem
+  &__link
+    margin-bottom 2rem
+    a
+      border-bottom 1px solid rgba(#fff, .2)
+      color #fff
+      display inline-block
+      font-size 1.8rem
+      font-weight 600
+      text-decoration none
+
+.mobile-navigation
+  &__accordion
+    display block
+  &__link
+    color #fff
+    display inline-block
+    font-weight 600
+    line-height 1
+    margin-bottom 4rem
+    margin-right 1rem
+    text-transform uppercase
+    text-decoration none
+  &__arrow
+    border 1px solid #fff
+    border-radius 50%
+    circle(2.5rem)
+    display inline-block
+    text-align center
+    transform translateY(-1px)
+    vertical-align middle
+    .fa
+      transform translateY(2px)
+      transition all .2s
+    &--active
+      .fa
+        transform rotate(180deg)
+  &__body
+    display none
+
 @media(max-width 1140px)
   // body
   //   overflow-X hidden
@@ -74,6 +126,30 @@
   .navigation
     display none
 
+@media(max-width 1200px)
+  .actual-slider
+    .slide__img
+      img
+        width 100%
+    .slick
+      &-prev,
+      &-next
+        color #fff
+        top 45%
+        z-index 50
+        &:before
+          font-size 4rem
+          opacity 1
+      &-prev
+        left 1rem
+      &-next
+        right 1rem
+
+@media(max-width 600px)
+  .date
+    float none
+    margin-bottom 2rem
+    text-align left
 
 @media(max-width 500px)
   .mobile-header
@@ -86,4 +162,20 @@
       background-position 60%
     &__container
       transform translateY(4rem)
+  .actual-slider
+    .slick
+      &-prev
+        left .5rem
+      &-next
+        right .5rem
+  .contact
+    &__email
+      margin-bottom 2rem
+  .main-
+  .wf
+    margin-bottom 2rem
+  .copy
+    margin-bottom 2rem
+  .sitemap-link
+    text-align left
 

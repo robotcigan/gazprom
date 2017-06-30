@@ -14,12 +14,59 @@ html(lang="ru")
       .grid.grid--container
         .row.row--sm-center
           .col.col--xs-6
-            .logo.logo--white
+            a(href="./pages.html").logo.logo--white
           .col.col--xs-6
             .mobile-menu-toggle
               span
               span
               span
+
+    .mobile-menu
+      .grid.grid--container
+        .mobile-menu__links
+          .mobile-menu__link
+            a(href="") О компании
+          .mobile-menu__link
+            a(href="") Новости
+          .mobile-menu__link
+            a(href="") Контакты
+          .mobile-menu__link
+            a(href="") Личный кабинет
+        nav.mobile-navigation
+          .mobile-navigation__accordion
+            a(href="").mobile-navigation__link Физическим лицам
+            .mobile-navigation__arrow
+              i.fa.fa-angle-down
+            .mobile-navigation__body
+              .mobile-menu__link
+                a(href="") Сообщить показания счетчика
+              .mobile-menu__link
+                a(href="") Платежные сервисы
+              .mobile-menu__link
+                a(href="") Оформить электронную квитанцию
+              .mobile-menu__link
+                a(href="") Населению
+              .mobile-menu__link
+                a(href="") Газ для новичков
+              .mobile-menu__link
+                a(href="") Учет газа
+              .mobile-menu__link
+                a(href="") Газификация домовладения
+          .mobile-navigation__accordion
+            a(href="").mobile-navigation__link Юридическим лицам
+            .mobile-navigation__arrow
+              i.fa.fa-angle-down
+            .mobile-navigation__body
+              .mobile-menu__link
+                a(href="") Тендеры
+              .mobile-menu__link
+                a(href="") Реализация газа юридическим лицам
+              .mobile-menu__link
+                a(href="") Газификация
+        .contact
+          .contact__phone 8 (861) 262-04-74
+          .contact__trust Телефон доверия
+
 
     header.main-header
       .grid.grid--container
@@ -112,7 +159,8 @@ html(lang="ru")
 
 
     script(src="js/jquery.min.js")
+    script(src="js/jquery.easeScroll.js")
     script(src="js/slick.min.js")
     script(src="js/jquery.magnific-popup.min.js")
-    script(src="js/jquery.easeScroll.js")
+    script(src="js/flatpickr.min.js")
     script(src="js/main.js")

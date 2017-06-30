@@ -1,0 +1,63 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link Физическим лицам
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Сообщить показания счетчика
+
+  .inner.grid.grid--container
+    .row
+      .col.col--md-4
+        nav.sidebar
+          li: a(href="").sidebar__link.sidebar__link--active Сообщить показания счетчика
+          li: a(href="").sidebar__link Платежные сервисы
+          li: a(href="").sidebar__link Оформить электронную квитанцию
+          li: a(href="").sidebar__link Населению
+          li: a(href="").sidebar__link Газ для новичков
+          li: a(href="").sidebar__link Учет газа
+          li: a(href="").sidebar__link Газификация домовладения
+      .inner__block.col.col--md-8
+        h1.h1 Сообщить показания счетчика
+        blockquote Абонент должен сообщать показания газового счетчика ежемесячно. Делать это можно одновременно с оплатой газа, если же оплата в установленный срок невозможна, то переданная по телефону или через наш сайт информация о текущих показаниях счетчика газа позволит вести точный учет газа, не прибегая к расчетным начислениям.
+        form.form
+          .row
+            .col.col--sm-6
+              .form-control
+                .form-control
+                  input(type="text").datepicker
+                  label Дата снятия показаний
+            .col.col--sm-6
+              .form-control
+                select.custom-select
+                  option Л/с №5124161250, Дача
+                  option Л/с №5124161251, Дача
+                label.form-control__label--active Выберите лицевой счет
+                .form-control__icon
+                  i.fa.fa-angle-down
+            .col.col--sm-9
+              .form-control
+                input(type="text")
+                label Введите показания
+            .col.col--sm-3
+              button.btn.btn--full-size ОТправить
+        .row
+          .col.col--sm-6
+            .file
+              .file__icon
+                img(src="img/pdf-file.png", alt="")
+              .file__content
+                a(href="" download).file__name Правила поставки газа для обеспечения комунально-бытовых нужд населения
+                .file__size (PDF, 774 КБ)
+
+
+
+
+
+
+
+
+
+

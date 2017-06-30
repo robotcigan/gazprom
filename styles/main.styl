@@ -14,6 +14,8 @@
 @import 'modifications/modifications.styl'
 
 @import 'pages/inner.styl'
+@import 'pages/search.styl'
+@import 'pages/news.styl'
 
 .grid--container
   max-width 1144px
@@ -160,8 +162,11 @@
 
 .date
   float left
-  margin-right 4rem
+  flex-shrink 0
+  // padding-left 1rem
+  margin-right 3.5em
   text-align right
+  min-width 7.5rem
   &__number
     font-size 2.4rem
     font-weight 600

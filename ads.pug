@@ -1,0 +1,59 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Объявления
+
+
+  .inner.grid.grid--container
+    .inner__block
+      h1.h1 Объявления
+      h3.h3 ООО «Газпром межрегионгаз Краснодар» сдает в аренду собственные офисные помещения, расположенные на территории Краснодарского края:
+      ol
+        li: span Староминский район, ст. Староминская, ул. Кольцовская, д. 13
+        .row
+          .col.col--sm-6
+            .inner__img
+              img(src="img/ads1.jpg", alt="")
+          .col.col--sm-6
+            .inner__img
+              img(src="img/ads2.jpg", alt="")
+        li: span Кущевский район, ст. Кущевская, ул. Ленина, 17 А
+        .row
+          .col.col--sm-6
+            .inner__img
+              img(src="img/ads3.jpg", alt="")
+          .col.col--sm-6
+            .inner__img
+              img(src="img/ads4.jpg", alt="")
+        li: span Ленинградский район, ст. Ленинградская, ул. Ленина, 15
+        .row
+          .col.col--sm-6
+            .inner__img
+              img(src="img/ads5.jpg", alt="")
+        li: span Выселковский район, ст. Выселки, ул. Лунева, 29.
+        .row
+          .col.col--sm-6
+            .inner__img
+              img(src="img/ads6.jpg", alt="")
+          .col.col--sm-6
+            .inner__img
+              img(src="img/ads7.jpg", alt="")
+      p Вышеуказанные помещения находятся в центральной части населенных пунктов, оборудованы охранной сигнализацией (пунктом охраны) и автостоянкой.
+      strong Стоимость аренды: 
+      p ст. Староминская - 344,4 руб/1 м2
+        br
+        | ст. Кущевская - 361,5 руб/1 м2
+        br
+        | ст. Ленинградская - 374,4 руб/1 м2
+        br
+        | ст. Выселки - 356,9 руб/1 м2
+        br
+        | + коммунальные расходы.
+      p По желанию арендатора в аренду могут включаться услуги по уборке, вывозу ТБО.
+      p Контактные телефоны: 8 (8612) 79-26-38; 79-26-43
+      p Эл. почта: 
+        a(href="").link rozovek@krk-rg.ru

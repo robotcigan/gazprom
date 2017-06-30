@@ -13,15 +13,49 @@
     <header class="mobile-header">
       <div class="grid grid--container">
         <div class="row row--sm-center">
-          <div class="col col--xs-6">
-            <div class="logo logo--white"></div>
-          </div>
+          <div class="col col--xs-6"><a class="logo logo--white" href="./pages.html"></a></div>
           <div class="col col--xs-6">
             <div class="mobile-menu-toggle"><span></span><span></span><span></span></div>
           </div>
         </div>
       </div>
     </header>
+    <div class="mobile-menu">
+      <div class="grid grid--container">
+        <div class="mobile-menu__links">
+          <div class="mobile-menu__link"><a href="">О компании</a></div>
+          <div class="mobile-menu__link"><a href="">Новости</a></div>
+          <div class="mobile-menu__link"><a href="">Контакты</a></div>
+          <div class="mobile-menu__link"><a href="">Личный кабинет</a></div>
+        </div>
+        <nav class="mobile-navigation">
+          <div class="mobile-navigation__accordion"><a class="mobile-navigation__link" href="">Физическим лицам</a>
+            <div class="mobile-navigation__arrow"><i class="fa fa-angle-down"></i></div>
+            <div class="mobile-navigation__body">
+              <div class="mobile-menu__link"><a href="">Сообщить показания счетчика</a></div>
+              <div class="mobile-menu__link"><a href="">Платежные сервисы</a></div>
+              <div class="mobile-menu__link"><a href="">Оформить электронную квитанцию</a></div>
+              <div class="mobile-menu__link"><a href="">Населению</a></div>
+              <div class="mobile-menu__link"><a href="">Газ для новичков</a></div>
+              <div class="mobile-menu__link"><a href="">Учет газа</a></div>
+              <div class="mobile-menu__link"><a href="">Газификация домовладения</a></div>
+            </div>
+          </div>
+          <div class="mobile-navigation__accordion"><a class="mobile-navigation__link" href="">Юридическим лицам</a>
+            <div class="mobile-navigation__arrow"><i class="fa fa-angle-down"></i></div>
+            <div class="mobile-navigation__body">
+              <div class="mobile-menu__link"><a href="">Тендеры</a></div>
+              <div class="mobile-menu__link"><a href="">Реализация газа юридическим лицам</a></div>
+              <div class="mobile-menu__link"><a href="">Газификация</a></div>
+            </div>
+          </div>
+        </nav>
+        <div class="contact">
+          <div class="contact__phone">8 (861) 262-04-74</div>
+          <div class="contact__trust">Телефон доверия</div>
+        </div>
+      </div>
+    </div>
     <header class="main-header">
       <div class="grid grid--container">
         <div class="row row--sm-center">
@@ -102,9 +136,10 @@
       </div>
     </footer>
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easeScroll.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.easeScroll.js"></script>
+    <script src="js/flatpickr.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

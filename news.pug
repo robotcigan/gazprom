@@ -1,0 +1,105 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Новости
+
+
+  .inner.grid.grid--container
+    .row
+      .inner__block.col.col--xl-9
+        h1.h1 Новости
+        .link-block
+          a(href="").link-block__link.link-block__link--active 2017
+          a(href="").link-block__link 2016
+          a(href="").link-block__link 2015
+          a(href="").link-block__link 2014
+          a(href="").link-block__link 2013
+          a(href="").link-block__link 2012
+          a(href="").link-block__link 2011
+          a(href="").link-block__link 2010
+          a(href="").link-block__link 2009
+
+        .news
+          .new
+            .date
+              .date__number 31
+              .date__month марта
+            .new__container
+              a(href="").new__title Динамика роста просроченной задолженности российских потребителей за газ снижается
+              .new__anons Совет директоров ПАО «Газпром» рассмотрел информацию об укреплении платежной дисциплины при поставках газа на внутренний рынок и принимаемых компанией мерах по погашению задолженности за поставленный газ.
+
+          .new
+            .date
+              .date__number 22
+              .date__month марта
+            .new__container
+              a(href="").new__title Похитители газа в Краснодарском крае добровольно возместили ООО «Газпром межрегионгаз Краснодар» две трети причиненного ущерба
+              .new__anons Совет директоров ПАО «Газпром» рассмотрел информацию об укреплении платежной дисциплины при поставках газа на внутренний рынок и принимаемых компанией мерах по погашению задолженности за поставленный газ.
+
+          .new
+            .date
+              .date__number 16
+              .date__month марта
+            .new__container
+              a(href="").new__title Предприятия теплоэнергетики Краснодарского края в разгар отопительного сезона увеличили свои долги поставщикам за газ на более чем полмиллиарда рублей
+              .new__anons Наибольший прирост задолженность приходится на АО «АТЭК», который увеличил свои долги перед ООО «Газпром межрегионгаз Краснодар» на 55 процентов.
+
+          .new
+            .date
+              .date__number 4
+              .date__month марта
+            .new__container
+              a(href="").new__title Четверть долгов за газ жителей Краснодарского края приходится на Сочи
+              .new__anons По данным специалистов ООО «Газпром межрегионгаз Краснодар» наибольшая просроченная задолженность за газ на Кубани приходится на жителей олимпийской столицы: сочинцы сформировали по итогам прошедшего года более 25% долгов абонентов или 216 млн рублей.
+
+          .new
+            .date
+              .date__number 27
+              .date__month февраля
+            .new__container
+              a(href="").new__title Динамика роста просроченной задолженности российских потребителей за газ снижается
+              .new__anons Совет директоров ПАО «Газпром» рассмотрел информацию об укреплении платежной дисциплины при поставках газа на внутренний рынок и принимаемых компанией мерах по погашению задолженности за поставленный газ.
+
+          .new
+            .date
+              .date__number 12
+              .date__month февраля
+            .new__container
+              a(href="").new__title Похитители газа в Краснодарском крае добровольно возместили ООО «Газпром межрегионгаз Краснодар» две трети причиненного ущерба
+              .new__anons Совет директоров ПАО «Газпром» рассмотрел информацию об укреплении платежной дисциплины при поставках газа на внутренний рынок и принимаемых компанией мерах по погашению задолженности за поставленный газ.
+
+
+        .row
+          .col.col--sm-offset-2.col--no-gutters
+            a(href="").btn
+              span Следующая страница
+              i.btn__icon
+                i.fa.fa-angle-right
+            .pagination
+              a(href="").pagination__link.pagination__link--active
+                span 1
+              a(href="").pagination__link 2
+              a(href="").pagination__link 3
+              a(href="").pagination__link 4
+              a(href="").pagination__link 5
+              a(href="").pagination__link &hellip;
+              a(href="").pagination__link 10
+
+      .col.col--xl-3
+        .aside-block
+          form.form
+            .form-control
+              input(type="email")
+              label Введите E-mail
+            button.btn.btn--full-size Подписаться на новости
+          .row
+            - for(var y = 1; y < 5; y++)
+              .col.col--xl-12.col--lg-3.col--sm-6
+                a(href="").inner__img.inner__img--full
+                  img(src="img/slider-b" + y + ".jpg", alt="")
+
+

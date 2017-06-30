@@ -31,4 +31,25 @@ center()
   right 0
   top 0
 
+link()
+  border-bottom 1px solid rgba($main, .2)
+  color $main
+  display inline
+  text-decoration none
+  transition border-color .4s, color .4s
+  &:hover
+    color $primary
+    border-color rgba($primary, .2)
+    
+link-type-2()
+  border-bottom 1px solid rgba($primary, .2)
+  color $primary
+  display inline
+  text-decoration none
+  transition border-color .4s, color .4s
+  &:hover
+    color $primary - 20%
+    border-color rgba($primary, .5)
+
+
   

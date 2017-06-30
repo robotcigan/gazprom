@@ -1,0 +1,27 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link Физическим лицам
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Оформить электронную квитанцию
+
+  .inner.grid.grid--container
+    .row
+      .col.col--md-4
+        nav.sidebar
+          li: a(href="").sidebar__link Сообщить показания счетчика
+          li: a(href="").sidebar__link Платежные сервисы
+          li: a(href="").sidebar__link.sidebar__link--active Оформить электронную квитанцию
+          li: a(href="").sidebar__link Населению
+          li: a(href="").sidebar__link Газ для новичков
+          li: a(href="").sidebar__link Учет газа
+          li: a(href="").sidebar__link Газификация домовладения
+      .inner__block.col.col--md-8
+        h1.h1 Оформить электронную квитанцию
+        p Абонент должен сообщать показания газового счетчика ежемесячно. Делать это можно одновременно с оплатой газа, если же оплата в установленный срок невозможна, то переданная по телефону или через наш сайт информация о текущих показаниях счетчика газа позволит вести точный учет газа, не прибегая к расчетным начислениям.
+        .well
+          p Для того, чтобы сообщить показания счетчика войдите в личный кабинет
+          a(href="").btn Войти

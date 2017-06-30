@@ -51,12 +51,13 @@ gulp.task 'es6', ->
 
 
 gulp.task 'imagemin', ->
-  gulp.src 'img/*'
+  gulp.src 'img/**/*'
   .pipe imagemin([
     imagemin.jpegtran({progressive: true})
   ], {
     verbose: true
   })
+  .on 'error', swallowError
   .pipe gulp.dest('dist/img')
 
 gulp.task 'pug', ->
@@ -77,7 +78,7 @@ gulp.task 'default', ['pug', 'stylus', 'imagemin', 'es6'], ->
     notify: false
     open: false
 
-  gulp.watch('img/*', ['imagemin'])
+  gulp.watch('img/**/*', ['imagemin'])
   gulp.watch 'js/main.js', ['es6']
   gulp.watch 'js/vendor.js', ['build']
   gulp.watch 'styles/**/*.styl', ['stylus']
