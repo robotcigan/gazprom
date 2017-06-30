@@ -28,6 +28,22 @@
     margin-left 2rem
   &:hover
     background-color $primary - 15%
+  &--solid
+    background-color transparent
+    color $primary
+    border 2px solid $primary
+    &:hover
+      border-color $primary - 15%
+      color #fff
+  &--transparent
+    background-color transparent
+    color $primary
+    padding 2.2rem 1.5rem
+    // transform translateX(-1.5rem)
+    &:hover
+      background-color rgba($primary, .08)
+    .btn__icon + span
+      margin-left 1rem
   &--full-size
     padding 2.2rem 3rem
     text-align center
@@ -99,6 +115,7 @@
     -webkit-appearance none
     &:focus
       border-color $primary
+      box-shadow 0 0 0 1px $primary
       & + label
         font-size 1.2rem
         top 14px
@@ -122,3 +139,85 @@
       color $error
     .form-control__icon
       color $error
+
+
+.checkbox
+  cursor pointer
+  display block
+  margin-bottom 1rem
+  user-select none
+  &__label
+    background transparent
+    border-radius $radius
+    border 1px solid $light-gray - 10%
+    cursor pointer
+    circle(2.4rem)
+    display inline-block
+    margin-right 1rem
+    position relative
+    vertical-align middle
+    z-index 1
+    &:after
+      color #fff
+      content "\f00c"
+      display none
+      font-family 'FontAwesome'
+      font-size 1.5rem
+      left 4px
+      position absolute
+      top 2px
+      z-index 10
+  input
+    display none
+  input:checked + .checkbox__label
+    background-color $primary
+    border-color $primary
+    &:after
+      display block
+  label
+    color $main
+    display inline-block
+    cursor pointer
+    vertical-align middle
+
+.radio
+  cursor pointer
+  display block
+  margin-bottom 1rem
+  user-select none
+  &__label
+    background transparent
+    border-radius 50%
+    border 1px solid $light-gray - 10%
+    cursor pointer
+    circle(2.4rem)
+    display inline-block
+    margin-right 1rem
+    position relative
+    vertical-align middle
+    z-index 1
+    &:after
+      background-color $primary
+      border-radius 50%
+      circle(1.4rem)
+      color #fff
+      content ''
+      display none
+      font-size 1.5rem
+      left 4px
+      position absolute
+      top 4px
+      z-index 10
+  input
+    display none
+  input:checked + .radio__label
+    background-color #fff
+    border-color $primary
+    box-shadow 0 0 0 1px $primary
+    &:after
+      display block
+  label
+    color $main
+    display inline-block
+    cursor pointer
+    vertical-align middle

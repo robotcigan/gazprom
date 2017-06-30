@@ -9,6 +9,7 @@
 @import 'base/table.styl'
 @import 'base/typography.styl'
 @import 'base/animations.styl'
+@import 'base/icons.styl'
 @import 'base/modal.styl'
 
 @import 'modifications/modifications.styl'
@@ -16,6 +17,7 @@
 @import 'pages/inner.styl'
 @import 'pages/search.styl'
 @import 'pages/news.styl'
+@import 'pages/lk.styl'
 
 .grid--container
   max-width 1144px
@@ -36,6 +38,12 @@
   color $primary
   border-bottom 1px solid rgba($primary, .2)
   text-decoration none
+  &--small
+    display block
+    font-size 1.4rem
+    font-weight 600
+    & + .link--small
+      margin-top 1rem
 
 .main-header
   color $main

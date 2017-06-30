@@ -1,0 +1,78 @@
+extends layout-lk.pug
+
+block content
+
+  .inner.grid.grid--container
+    .lk-container
+      .row
+        .col.col--md-4
+          nav.sidebar
+            li: a(href="").sidebar__link.sidebar__link--active Лицевые счета и оплата
+            li: a(href="").sidebar__link Сообщить показания
+            li: a(href="").sidebar__link Сформировать электронную квитанцию
+            li: a(href="").sidebar__link Статистика
+            li: a(href="").sidebar__link Информация
+          a(href="").btn.btn--solid Настройки
+        .inner__block.col.col--md-8
+          h1.h1 Лицевые счета и оплата
+          p.text-info Обратите внимание, данные обновляются раз в 2 недели
+          .big-offset
+            .balance-block
+              .balance-block__top
+                .balance-block__location Ул. Победы 15, кв.10
+                .balance-block__number Л/с №5124161250
+              .balance-block__last Последние принятые показания: 000451
+              .balance-block__summ Баланс: 58.50 руб.
+            table.table
+              thead
+                th Начисление
+                th Сумма, руб
+                th Статус
+              tbody
+                tr
+                  td Январь
+                  td 194.76
+                  td Оплачено
+
+            a(href="").btn Перейти к оплате
+          
+          .big-offset
+            .balance-block
+              .balance-block__top
+                .balance-block__location Дача
+                .balance-block__number Л/с №5124161250
+              .balance-block__last Последние принятые показания: 000451
+              .balance-block__summ Баланс: - 178.50 руб.
+            table.table
+              thead
+                th Начисление
+                th Сумма, руб
+                th Статус
+              tbody
+                tr
+                  td Январь
+                  td 194.76
+                  td Оплачено
+            .offset-left
+              .row
+                .col.col--sm-6
+                  .radio
+                    input(type="radio" id="1" name="radio")
+                    label(for="1").radio__label
+                    label.radio__text(for="1")
+                      img(src="img/lk-1.png", alt="")
+                  a(href="").link Другие способы оплаты
+                .col.col--sm-6
+                  .radio
+                    input(type="radio" id="2" name="radio")
+                    label(for="2").radio__label
+                    label.radio__text(for="2")
+                      img(src="img/lk-2.png", alt="")
+            .summ
+              .form-control
+                input(type="number")
+                label Сумма к оплате
+              .btn Оплатить
+
+
+

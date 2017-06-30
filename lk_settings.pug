@@ -1,0 +1,52 @@
+extends layout-lk.pug
+
+block content
+
+  .inner.grid.grid--container
+    .lk-container
+      .row
+        .col.col--md-4
+          nav.sidebar
+            li: a(href="").sidebar__link Лицевые счета и оплата
+            li: a(href="").sidebar__link Сообщить показания
+            li: a(href="").sidebar__link Сформировать электронную квитанцию
+            li: a(href="").sidebar__link Статистика
+            li: a(href="").sidebar__link Информация
+          a(href="").btn.btn--solid Настройки
+        .inner__block.col.col--md-8
+          h1.h1 Настройки
+          form.form
+            .row
+              .col.col--sm-6
+                .form-control
+                  input(type="password")
+                  label Новый пароль
+              .col.col--sm-6
+                .form-control
+                  input(type="password")
+                  label Повторите пароль
+              .col.col--sm-6
+                .form-control
+                  input(type="tel").phonemask
+                  label Номер телефона
+          h3.h3 Мои лицевые счета
+          table.table
+            thead
+              th Ул. Победы 15, кв.10
+              th Л/с №5950337701
+              th
+                a(href="")
+                  i.icon.icon--edit
+            tbody
+              tr
+                td Дача
+                td Л/с №5124161250
+          a(href="").btn.btn--transparent
+            i.btn__icon
+              i.fa.fa-plus
+            span Добавить лицевой счет
+
+
+
+
+

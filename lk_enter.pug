@@ -1,0 +1,25 @@
+extends layout-lk.pug
+
+block content
+
+  .inner.grid.grid--container
+    .inner__block
+      .row
+        .col.col--sm-8.col.col--sm-offset-2
+          form.form.lk-form
+            .form__title Вход
+            .form-control
+              input(type="email")
+              label E-mail
+            .form-control
+              input(type="password")
+              label Пароль
+            .form__footer.small-offset
+              .form__footer-left
+                a(href="").btn Восстановить
+              .form__footer-right
+                a(href="").link.link--small.uppercase Восстановить пароль
+                a(href="").link.link--small.uppercase Я не зарегистрирован
+            a(href="").link Вход в старый личный кабинет
+
+
