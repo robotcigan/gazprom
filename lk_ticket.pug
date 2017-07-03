@@ -1,0 +1,44 @@
+extends layout-lk.pug
+
+block content
+  
+  script(src="./js/amcharts.js" type="text/javascript")
+  script(src="./js/serial.js" type="text/javascript")
+  .inner.grid.grid--container
+    .lk-container
+      .row
+        .col.col--md-4
+          nav.sidebar
+            li: a(href="").sidebar__link Лицевые счета и оплата
+            li: a(href="").sidebar__link Сообщить показания
+            li: a(href="").sidebar__link.sidebar__link--active Сформировать электронную квитанцию
+            li: a(href="").sidebar__link Статистика
+            li: a(href="").sidebar__link Информация
+          a(href="").btn.btn--solid Настройки
+        .inner__block.col.col--md-8
+          h1.h1 Сформировать электронную квитанцию
+          p.text-info Обратите внимание, данные обновляются раз в 2 недели
+          form.form
+            .row
+              .col.col--sm-6
+                .form-control
+                  select.custom-select
+                    option Январь
+                    option Февраль
+                  label.form-control__label--active Месяц
+                  .form-control__icon
+                    i.fa.fa-angle-down
+              .col.col--sm-6
+                .form-control
+                  select.custom-select
+                    option Л/с №5124161250, Дача
+                    option Л/с №5124161251, Дача
+                  label.form-control__label--active Выберите лицевой счет
+                  .form-control__icon
+                    i.fa.fa-angle-down
+              .col.col--sm-12
+                button.btn Получить
+
+
+
+

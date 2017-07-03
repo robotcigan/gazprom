@@ -80,6 +80,6 @@ gulp.task 'default', ['pug', 'stylus', 'imagemin', 'es6'], ->
 
   gulp.watch('img/**/*', ['imagemin'])
   gulp.watch 'js/main.js', ['es6']
-  gulp.watch 'js/vendor.js', ['build']
+  # gulp.watch 'js/vendor.js', ['build']
   gulp.watch 'styles/**/*.styl', ['stylus']
   gulp.watch '*.pug', ['pug-watch']

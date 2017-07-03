@@ -73,10 +73,32 @@
       </div>
     </header>
     <nav class="navigation">
-      <div class="navigation__container grid grid--container"><a class="navigation__link" href="">Физическим лицам</a><a class="navigation__link" href="">Юридическим лицам</a><a class="navigation__link" href="">Личный кабинет</a>
-        <div class="navigation__search search">
-          <div class="search__icon"><i class="fa fa-search"></i></div>
+      <div class="grid grid--container">
+        <div class="navigation__container">
+          <div class="navigation__link">
+            <div class="dropdown"><a class="dropdown__title" href="">Физическим лицам</a>
+              <div class="dropdown__body"><a class="dropdown__link" href="">Сообщить показания счетчика</a><a class="dropdown__link" href="">Платежные сервисы</a><a class="dropdown__link" href="">Оформить электронную квитанцию</a><a class="dropdown__link" href="">Населению</a><a class="dropdown__link" href="">Газ для новичков</a><a class="dropdown__link" href="">Учет газа</a><a class="dropdown__link" href="">Газификация домовладения</a></div>
+            </div>
+          </div>
+          <div class="navigation__link">
+            <div class="dropdown"><a class="dropdown__title" href="">Юридическим лицам</a>
+              <div class="dropdown__body"><a class="dropdown__link" href="">Тендеры</a><a class="dropdown__link" href="">Реализация газа юридическим лицам</a><a class="dropdown__link" href="">Газификация</a></div>
+            </div>
+          </div>
+          <div class="navigation__link">
+            <div class="dropdown"><a class="dropdown__title" href="">Личный кабинет</a></div>
+          </div>
         </div>
+        <form class="search">
+          <div class="search__icon search__icon--disabled">
+            <input type="submit" id="search-submit">
+            <label for="search-submit"><i class="fa fa-search"></i></label>
+          </div>
+          <div class="search__body">
+            <input class="search__input" type="text">
+            <div class="search__close"><span>×</span></div>
+          </div>
+        </form>
       </div>
     </nav>
     <main>
@@ -184,11 +206,12 @@
         </div>
       </div>
     </footer>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.easeScroll.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/flatpickr.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.easeScroll.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/flatpickr.min.js"></script>
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

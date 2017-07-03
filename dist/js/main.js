@@ -124,4 +124,33 @@ $(document).ready(function () {
     $(this).find('.accordion__arrow').toggleClass('accordion__arrow--active');
     $(this).closest('.accordion').find('.accordion__body').slideToggle();
   });
+
+  // Модальное окно
+  $('.modal-open').magnificPopup({
+    type: 'inline'
+  });
+
+  // Поиск
+  $('.search__icon').on('click', function (e) {
+    if ($(this).hasClass('search__icon--disabled')) {
+      e.preventDefault();
+      $(this).removeClass('search__icon--disabled');
+      $('.search').addClass('search--active');
+    }
+  });
+  $('.search__close').on('click', function () {
+    $(this).closest('.search').removeClass('search--active');
+    $('.search__icon').addClass('search__icon--disabled');
+  });
+
+  // Закрытие блока по нажатию вне его области
+  $(document).on('click', function (event) {
+    $('body').addClass('body--cursor-pointer');
+    var div = $(".search");
+    if (!$(event.target).closest(div).length) {
+      div.removeClass('search--active');
+      $('.search__icon').addClass('search__icon--disabled');
+      $('body').removeClass('body--cursor-pointer');
+    }
+  });
 });

@@ -14,14 +14,39 @@ block content
                   | Российской Федерации 
                 .btn.btn--primary Узнать подробнее
 
-  .navigation
-    .navigation__container.grid.grid--container
-      a(href="").navigation__link Физическим лицам
-      a(href="").navigation__link Юридическим лицам
-      a(href="").navigation__link Личный кабинет
-      .navigation__search.search
-        .search__icon
-          i.fa.fa-search
+  nav.navigation.navigation--index
+    .grid.grid--container
+      .navigation__container
+        .navigation__link
+          .dropdown
+            a(href="").dropdown__title Физическим лицам
+            .dropdown__body
+              a(href="").dropdown__link Сообщить показания счетчика
+              a(href="").dropdown__link Платежные сервисы
+              a(href="").dropdown__link Оформить электронную квитанцию
+              a(href="").dropdown__link Населению
+              a(href="").dropdown__link Газ для новичков
+              a(href="").dropdown__link Учет газа
+              a(href="").dropdown__link Газификация домовладения
+        .navigation__link
+          .dropdown
+            a(href="").dropdown__title Юридическим лицам
+            .dropdown__body
+              a(href="").dropdown__link Тендеры
+              a(href="").dropdown__link Реализация газа юридическим лицам
+              a(href="").dropdown__link Газификация
+        .navigation__link
+          .dropdown
+            a(href="").dropdown__title Личный кабинет
+      form.search
+        .search__icon.search__icon--disabled
+          input(type="submit" id="search-submit")
+          label(for="search-submit")
+            i.fa.fa-search
+        .search__body
+          input(type="text").search__input
+          .search__close
+            span ×
 
   .gray-block
     .grid.grid--container

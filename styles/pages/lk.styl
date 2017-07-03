@@ -2,18 +2,24 @@
   background #151e50 url('../../img/lk.jpg') no-repeat
   background-size cover
   padding-top 6rem
+  .inner
+    margin-bottom 0
+    padding-bottom 10rem
   .main-footer
-    border-color rgba(#e6ecf2, .5)
+    border none
     color rgba(#fff, .5)
     &__link
       a
         color rgba(#fff, .5)
+    .main-footer__links--type-1 .main-footer__link a
+      border-color rgba(#fff, .2)
     &__bottom
       .grid--container
         border-color rgba(#e6ecf2, .5)
 
 .lk-container
   background-color #fff
+  border-radius $radius
   margin 0 -11rem
   padding 6rem 11rem
 

@@ -1,0 +1,39 @@
+extends layout-lk.pug
+
+block content
+
+  .inner.grid.grid--container
+    .inner__block
+      .row
+        .col.col--sm-8.col.col--sm-offset-2
+          form.form.lk-form
+            .form__title Регистрация
+            .form-control
+              input(type="email")
+              label E-mail
+            .form-control
+              input(type="password")
+              label Пароль
+            .form-control
+              input(type="password")
+              label Повторите пароль
+            .checkbox.medium-offset
+              input(type="checkbox" id="checkbox")
+              label(for="checkbox").checkbox__label
+              label.checkbox__text(for="checkbox") Я согласен на обработку персональных данных
+            .form__footer.small-offset
+              .form__footer-left
+                a(href="").btn Зарегистрироваться
+              .form__footer-right
+                a(href="").link.link--small.uppercase Я уже зарегистрирован
+            .big-offset
+            .row
+              .col.col--sm-10
+                .file
+                  .file__icon
+                    img(src="img/file.png", alt="")
+                  .file__content
+                    a(href="" download).file__name Инструкция по регистрации в Личном кабинете и подключении лицевых счетов
+
+
+

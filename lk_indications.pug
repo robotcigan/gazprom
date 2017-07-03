@@ -1,0 +1,45 @@
+extends layout-lk.pug
+
+block content
+
+  .inner.grid.grid--container
+    .lk-container
+      .row
+        .col.col--md-4
+          nav.sidebar
+            li: a(href="").sidebar__link Лицевые счета и оплата
+            li: a(href="").sidebar__link.sidebar__link--active Сообщить показания
+            li: a(href="").sidebar__link Сформировать электронную квитанцию
+            li: a(href="").sidebar__link Статистика
+            li: a(href="").sidebar__link Информация
+          a(href="").btn.btn--solid Настройки
+        .inner__block.col.col--md-8
+          h1.h1 Сообщить показания
+          p Чтобы сообщить текущее показание прибора учета, введите данные в соответствующее поле и нажмите 
+            span.text-primary «Отправить»
+            | . Для отражения показаний счетчика газа в платежных документах за текущий месяц рекомендуем передавать показания счетчика газа до 15-го числа текущего месяца.
+          form.form
+            .row
+              .col.col--sm-6
+                .form-control
+                  .form-control
+                    input(type="text").datepicker
+                    label Дата снятия показаний
+              .col.col--sm-6
+                .form-control
+                  select.custom-select
+                    option Л/с №5124161250, Дача
+                    option Л/с №5124161251, Дача
+                  label.form-control__label--active Выберите лицевой счет
+                  .form-control__icon
+                    i.fa.fa-angle-down
+              .col.col--sm-12
+                .form-control
+                  input(type="text")
+                  label Введите показания
+              .col.col--sm-12
+                button.btn ОТправить
+
+
+
+
