@@ -160,4 +160,8 @@ $(document).ready(function() {
     }
   });
 
-})
+  // $('.table--special td').each(function () {
+  //   let info = $(this).data('info');
+  // })
+
+});

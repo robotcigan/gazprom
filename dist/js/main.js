@@ -153,4 +153,8 @@ $(document).ready(function () {
       $('body').removeClass('body--cursor-pointer');
     }
   });
+
+  // $('.table--special td').each(function () {
+  //   let info = $(this).data('info');
+  // })
 });

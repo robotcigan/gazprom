@@ -43,3 +43,52 @@
       background initial
     tr:nth-child(odd)
       background $primary + 95%
+  &--type-3
+    border-bottom $border
+    tr
+      border-bottom $border
+    tr:nth-child(even)
+      background-color #fff
+    tr:nth-child(1),
+    tr:nth-child(2)
+      background rgba($primary, .05)
+      color $primary
+    tr:nth-child(1)
+      td:nth-child(1)
+        border-right $border
+    tr:nth-child(2)
+      td
+        border-top $border
+    td
+      padding-left 1rem
+      padding-right 1rem
+      &:not(:first-child):not(:last-child)
+        border-left $border
+        border-right $border
+      &:nth-child(1)
+        max-width 18rem
+    small
+      color $gray
+  
+  &--special
+    .td--with-data
+      position relative
+      &:after
+        background-color #fff
+        box-shadow 0 0 15px 10px rgba(#ddd, .1)
+        content attr(data-info)
+        left 1rem
+        opacity 0
+        padding 1rem 2.5rem
+        position absolute
+        pointer-events none
+        top 90%
+        transform translateY(1rem)
+        transition all .4s
+        width 20rem
+      &:hover
+        &:after
+          opacity 1
+          transform none
+          pointer-events initial
+    

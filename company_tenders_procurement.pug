@@ -1,0 +1,82 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link Юридическим лицам
+        a(href="").breadcrumbs__link Тендеры
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Годовой план
+
+  .inner.grid.grid--container
+    .row
+      .col.col--md-4
+        nav.sidebar
+          li
+            a(href="").sidebar__link.sidebar__link--active Тендеры
+            ul
+              li: a(href="").sidebar__link Положение о закупочной деятельности
+              li: a(href="").sidebar__link.sidebar__link--active Годовой план
+              li: a(href="").sidebar__link Закупки
+              li: a(href="").sidebar__link Отчеты
+              li: a(href="").sidebar__link Архив
+          li: a(href="").sidebar__link Реализация газа
+          li: a(href="").sidebar__link Газификация
+      .inner__block.col.col--md-8
+        h1.h1 Закупки
+        .link-block
+          a(href="").link-block__link.link-block__link--active 2017
+          a(href="").link-block__link 2016
+          a(href="").link-block__link 2015
+          a(href="").link-block__link 2013 — 2014
+          a(href="").link-block__link 2012
+          a(href="").link-block__link 2011
+          a(href="").link-block__link 2010
+          a(href="").link-block__link 2009
+        .responsive-table
+          table.table.table--special
+            thead
+              th № и дата закупки
+              th Тип процедуры закупки
+              th Предмет процедуры закупки
+              th Документация процедуры закупки
+              th Срок приема заявок
+              th Изменения/ Разъяснения
+              th Результаты процедуры закупки
+            tbody
+              tr
+                td №31704766826 (111866) от 08.02.2017
+                td Открытый запрос предложений
+                td(data-info="Разработка проектов нормативов предельно допустимых выбросов (ПДВ) загрязняющих веществ в атмосферный воздух").td--with-data Разработка проектов нормативов&hellip;
+                td: a(href="").link Документация
+                td 08.02.17- 20.02.17
+                td: a(href="").link Разъяснения
+                td: a(href="").link Протокол Расторжение
+              tr
+                td №31704793868 (112478) от 15.02.2017
+                td Открытый запрос предложенийv
+                td(data-info="Разработка проектов нормативов предельно допустимых выбросов (ПДВ) загрязняющих веществ в атмосферный воздух").td--with-data Разработка проектов нормативов&hellip;
+                td: a(href="").link Документация
+                td 15.02.17- 28.02.17
+                td: a(href="")
+                td: a(href="").link Протокол
+              tr
+                td №31704868587 (114340) от 09.03.2017
+                td Открытый запрос предложенийv
+                td(data-info="Оказание услуг по  техническому обслуживанию").td--with-data Оказание услуг по  техническому обслуживанию&hellip;
+                td: a(href="").link Документация
+                td 15.02.17- 28.02.17
+                td: a(href="")
+                td: a(href="").link Протокол
+              tr
+                td №31704868587 (114340) от 09.03.2017
+                td Открытый запрос предложенийv
+                td(data-info="Оказание услуг по  техническому обслуживанию").td--with-data Оказание услуг по  техническому обслуживанию&hellip;
+                td: a(href="").link Документация
+                td 09.03.17- 20.03.17
+                td: a(href="")
+                td: a(href="").link Протокол
+
+
+                

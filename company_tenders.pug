@@ -1,0 +1,27 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link Юридическим лицам
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Тендеры
+
+  .inner.grid.grid--container
+    .row
+      .col.col--md-4
+        nav.sidebar
+          li
+            a(href="").sidebar__link.sidebar__link--active Тендеры
+            ul
+              li: a(href="").sidebar__link Положение о закупочной деятельности
+              li: a(href="").sidebar__link Годовой план
+              li: a(href="").sidebar__link Закупки
+              li: a(href="").sidebar__link Отчеты
+              li: a(href="").sidebar__link Архив
+          li: a(href="").sidebar__link Реализация газа
+          li: a(href="").sidebar__link Газификация
+      .inner__block.col.col--md-8
+        h1.h1 Тендеры
+        
