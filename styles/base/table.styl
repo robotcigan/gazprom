@@ -19,6 +19,7 @@
     padding 1.2rem 3rem
     padding-right 1rem
     margin 0
+    vertical-align top
     &:first-child
       min-width 7rem
   tr:nth-child(even)
@@ -86,9 +87,15 @@
         transform translateY(1rem)
         transition all .4s
         width 20rem
+        z-index 50
       &:hover
         &:after
           opacity 1
           transform none
           pointer-events initial
     
+@media(max-width 767px)
+  .table
+    th,
+    td
+      padding 1rem

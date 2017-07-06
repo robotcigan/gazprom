@@ -1,0 +1,54 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link Юридическим лицам
+        a(href="").breadcrumbs__link Реализация газа
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Возврат денежных средств
+
+  .inner.grid.grid--container
+    .row
+      .col.col--md-4
+        nav.sidebar
+          li: a(href="").sidebar__link Тендеры
+          li
+            a(href="").sidebar__link.sidebar__link--active Реализация газа
+            ul
+              li: a(href="").sidebar__link Цены и тарифы
+              li: a(href="").sidebar__link Порядок заключения договоров
+              li: a(href="").sidebar__link Порядок ограничения и поставок газа
+              li: a(href="").sidebar__link Автоматизированная система коммерческого учета газа
+              li: a(href="").sidebar__link Перечень кредитных организаций
+              li: a(href="").sidebar__link Согласование расчетных объемов поставки газа
+              li: a(href="").sidebar__link.sidebar__link--active Возрат денежных средств
+          li: a(href="").sidebar__link Газификация
+      .inner__block.col.col--md-8
+        h1.h1 Возврат денежных средств
+        ol
+          li
+            span Условия возврата:
+            ul
+              li: span расторжение договора;
+              li: span снижение лимита;
+              li: span окончание отопительного сезона;
+              li: span ошибочно уплаченная сумма.
+          li
+            span Перечень документов для возврата:
+            ul
+              li: span оригиналы письма (скачать шаблон Word) за подписью руководителя предприятия (ген. директора, директора и др.).
+              li: span в ином случае доверенность на права подписи финансовых документов (копия);
+              li: span акт сверки на конец предыдущего месяца;
+              li: span если денежные средства ошибочно поступили на счет организации, нужно приложить платежное поручение.
+          li
+            span Денежные средства не возвращаются:
+            ul
+              li: span Ликвидация предприятия
+              li: span Денежные средства не возвращаются 3-м лицам ( в т.ч. и в случаях когда 3-е лицо выступает плательщиком);
+
+
+
+
+

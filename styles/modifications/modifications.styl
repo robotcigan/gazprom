@@ -17,6 +17,26 @@
       content '\f105'
       font-family 'FontAwesome'
 
+.hero
+  .slick-dotted.slick-slider
+    margin-bottom 0
+  .slick
+    &-dots
+      bottom 3rem
+      li
+        button
+          &:before
+            border 1px solid #fff
+            border-radius 50%
+            circle(1.6rem)
+            content ''
+            opacity 1
+        &.slick-active
+          button
+            &:before
+              background-color #fff
+          
+
 .inner-text-slider
   .slick
     &-prev,
@@ -28,3 +48,24 @@
       left -3rem
     &-next
       right -3rem
+
+.actual
+  &-slider
+    margin 0 -1rem
+    img
+      width 100%
+  .slide
+    &__img
+      padding 0 1rem
+  .slick
+    &-prev,
+    &-next
+      height 4rem
+
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+  background-color $primary !important
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar
+  background-color $primary !important
+

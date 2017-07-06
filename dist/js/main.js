@@ -2,6 +2,8 @@
 
 $(document).ready(function () {
 
+  $('#chartdiv a').hide();
+
   if (window.location.pathname === '/gazprom/') {
     $('nav.navigation').hide();
   }
@@ -12,8 +14,16 @@ $(document).ready(function () {
   // Плавный скролл
   $("html").easeScroll();
 
+  // кастомный скрол
+  if ($('.news__list').length) {
+    $('.news__list').mCustomScrollbar({
+      theme: "dark",
+      mouseWheelPixels: 350
+    });
+  }
+
   $('.hero__slider').slick({
-    dots: false,
+    dots: true,
     arrows: false
   });
 
@@ -79,11 +89,11 @@ $(document).ready(function () {
   // мобильное меню
   $('.mobile-menu-toggle').on('click', function () {
     $(this).toggleClass('mobile-menu-toggle--active');
-    $('.mobile-menu').slideToggle();
+    $('.mobile-menu').stop().slideToggle();
   });
 
   $('.mobile-navigation__arrow').on('click', function () {
-    $(this).parent().find('.mobile-navigation__body').slideToggle();
+    $(this).parent().find('.mobile-navigation__body').stop().slideToggle();
     $(this).toggleClass('mobile-navigation__arrow--active');
   });
 
@@ -117,6 +127,12 @@ $(document).ready(function () {
   $('.datepicker').flatpickr({
     dateFormat: "d.m.Y",
     altInput: true
+  });
+
+  // Телефон маска
+  $('.phone-mask').inputmask({
+    mask: "+7 (999) 999 99 99",
+    showMaskOnHover: false
   });
 
   // Баян

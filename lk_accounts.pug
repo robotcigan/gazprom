@@ -5,7 +5,7 @@ block content
   .inner.grid.grid--container
     .lk-container
       .row
-        .col.col--md-4
+        .col.col--lg-4
           nav.sidebar
             li: a(href="").sidebar__link.sidebar__link--active Лицевые счета и оплата
             li: a(href="").sidebar__link Сообщить показания
@@ -13,7 +13,7 @@ block content
             li: a(href="").sidebar__link Статистика
             li: a(href="").sidebar__link Информация
           a(href="").btn.btn--solid Настройки
-        .inner__block.col.col--md-8
+        .inner__block.col.col--lg-8
           h1.h1 Лицевые счета и оплата
           p.text-info Обратите внимание, данные обновляются раз в 2 недели
           .big-offset
@@ -55,13 +55,13 @@ block content
                   td Оплачено
             .offset-left
               .row
-                .col.col--sm-6
+                .col.col--md-6
                   .radio
                     input(type="radio" id="1" name="radio")
                     label(for="1").radio__label
                     label.radio__text(for="1")
                       img(src="img/lk-1.png", alt="")
-                .col.col--sm-6
+                .col.col--md-6
                   .radio
                     input(type="radio" id="2" name="radio")
                     label(for="2").radio__label
@@ -82,8 +82,6 @@ block content
         br
         | ИНН: 2308070396 ООО
         br
-        |
-        br
         | Р/С 40702810630020102442
         br
         | БИК: 040349602
@@ -95,28 +93,28 @@ block content
           span В офисах агентов поставщика:
           .row.services
             - for (var i = 1; i < 7; i ++)
-              .col.col--lg-3
+              .col.col--lg-3.col--sm-6
                 a(href="").service
                   img(src="img/services/" + i + ".jpg", alt="")
             li
               span Через терминалы самообслуживания:
               .row.services
                 - for (var i = 7; i < 10; i ++)
-                  .col.col--lg-3
+                  .col.col--lg-3.col--sm-6
                     a(href="").service
                       img(src="img/services/" + i + ".jpg", alt="")
             li
               span Через интернет-сервисы:
               .row.services
                 - for (var i = 10; i < 12; i ++)
-                  .col.col--lg-3
+                  .col.col--lg-3.col--sm-6
                     a(href="").service
                       img(src="img/services/" + i + ".jpg", alt="")
             li
               span Через банкоматы:
               .row.services
                 - for (var i = 12; i < 18; i ++)
-                  .col.col--lg-3
+                  .col.col--lg-3.col--sm-6
                     a(href="").service
                       img(src="img/services/" + i + ".jpg", alt="")
       .inner__block

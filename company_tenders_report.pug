@@ -1,0 +1,50 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link Юридическим лицам
+        a(href="").breadcrumbs__link Тендеры
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Отчеты
+
+  .inner.grid.grid--container
+    .row
+      .col.col--md-4
+        nav.sidebar
+          li
+            a(href="").sidebar__link.sidebar__link--active Тендеры
+            ul
+              li: a(href="").sidebar__link Положение о закупочной деятельности
+              li: a(href="").sidebar__link Годовой план
+              li: a(href="").sidebar__link Закупки
+              li: a(href="").sidebar__link.sidebar__link--active Отчеты
+              li: a(href="").sidebar__link Архив
+          li: a(href="").sidebar__link Реализация газа
+          li: a(href="").sidebar__link Газификация
+      .inner__block.col.col--md-8
+        h1.h1 Отчеты
+        .link-block
+          a(href="").link-block__link.link-block__link--active 2017
+          a(href="").link-block__link 2016
+          a(href="").link-block__link 2015
+          a(href="").link-block__link 2014
+          a(href="").link-block__link 2013
+          a(href="").link-block__link 2012
+        .row
+          .col.col--sm-6
+            .file
+              .file__icon
+                img(src="./img/xls.png", alt="")
+              .file__content
+                a(href="" download).file__name Январь
+                .file__size (PDF, 774 КБ)
+          .col.col--sm-6
+            .file
+              .file__icon
+                img(src="./img/xls.png", alt="")
+              .file__content
+                a(href="" download).file__name Февраль
+                .file__size (PDF, 774 КБ)
+

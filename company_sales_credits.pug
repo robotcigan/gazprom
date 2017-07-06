@@ -1,0 +1,45 @@
+extends layout.pug
+
+block content
+  .breadcrumbs
+    .grid.grid--container
+      nav.breadcrumbs__nav
+        a(href="").breadcrumbs__link Главная
+        a(href="").breadcrumbs__link Юридическим лицам
+        a(href="").breadcrumbs__link Реализация газа
+        a(href="").breadcrumbs__link.breadcrumbs__link--active Перечень кредитных организаций
+
+  .inner.grid.grid--container
+    .row
+      .col.col--md-4
+        nav.sidebar
+          li: a(href="").sidebar__link Тендеры
+          li
+            a(href="").sidebar__link.sidebar__link--active Реализация газа
+            ul
+              li: a(href="").sidebar__link Цены и тарифы
+              li: a(href="").sidebar__link Порядок заключения договоров
+              li: a(href="").sidebar__link Порядок ограничения и поставок газа
+              li: a(href="").sidebar__link Автоматизированная система коммерческого учета газа
+              li: a(href="").sidebar__link.sidebar__link--active Перечень кредитных организаций
+              li: a(href="").sidebar__link Согласование расчетных объемов поставки газа
+              li: a(href="").sidebar__link Возрат денежных средств
+          li: a(href="").sidebar__link Газификация
+      .inner__block.col.col--md-8
+        h1.h1 Перечень кредитных организаций
+        p Банковские гарантии принимаются от следующих организаций:
+        ol
+          li: span ОАО "Газпромбанк"
+          li: span ОАО "АБ "Россия"
+          li: span ОАО "Сбербанк"
+          li: span ОАО "Собинбанк"
+          li: span ОАО "Внешторгбанк" (ВТБ)
+          li: span ООО Коммерческий банк "Кубань Кредит"
+          li: span ОАО "Крайинвестбанк"
+          li: span ОАО "Россельхозбанк"
+          li: span ОАО КБ "Центр-инвест"
+        p ООО "Газпром межрегионгаз Краснодар" может оставлять за собой право вносить изменения в указанный перечень кредитных организаций.
+
+
+
+
