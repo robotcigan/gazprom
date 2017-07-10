@@ -136,10 +136,12 @@ $(document).ready(function() {
   });
 
   // Телефон маска
-  $('.phone-mask').inputmask({
-    mask: "+7 (999) 999 99 99",
-    showMaskOnHover: false
-  });
+  if ( $('.phone-mask').length ) {
+    $('.phone-mask').inputmask({
+      mask: "+7 (999) 999 99 99",
+      showMaskOnHover: false
+    });
+  }
 
   // Баян
   $('.accordion .accordion__header').on('click', function () {
