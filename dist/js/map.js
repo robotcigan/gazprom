@@ -56,8 +56,14 @@ window.onload = function () {
     aus[state].node.name = state;
   }
 
-  $('path').on('click', function () {
+  $('.svg-map path').on('click', function () {
     $('.svg-content__item').removeClass('svg-content__item--active');
+    $('.svg-map path').css({
+      'fill': '#eeeeee'
+    })
+    $(this).css({
+      'fill': '#007ac2'
+    });
     var activeItem = $(this)[0].name;
     $('#' + activeItem).addClass('svg-content__item--active');
   });
