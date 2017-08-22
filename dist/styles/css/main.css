@@ -1529,6 +1529,47 @@ span .special-link {
     flex-wrap: wrap;
   }
 }
+.sitemap ul {
+  padding-left: 0;
+}
+.sitemap ul ul {
+  padding-left: 2rem;
+}
+.sitemap ul ul ul {
+  padding-left: 2rem;
+}
+.sitemap ul ul ul ul {
+  padding-left: 2rem;
+}
+.sitemap li {
+  list-style-type: none;
+}
+.sitemap li a {
+  border-bottom: 1px solid rgba(0,122,194,0.2);
+  color: #007ac2;
+  display: inline;
+  text-decoration: none;
+  transition: border-color 0.4s, color 0.4s;
+}
+.sitemap li a:hover {
+  color: #00629b;
+  border-color: rgba(0,122,194,0.5);
+}
+.sitemap li a + ul {
+  margin-top: 2rem;
+}
+.svg-map path {
+  stroke: #91979d;
+}
+.svg-map path:hover {
+  fill: rgba(0,122,194,0.2);
+}
+.svg-content__item {
+  display: none;
+}
+.svg-content__item--active {
+  display: block;
+}
 .grid--container {
   max-width: 1144px;
 }

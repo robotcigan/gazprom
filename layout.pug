@@ -1,0 +1,193 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    title Газпром
+    meta(name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="format-detection" content="telephone=no")
+    link(rel="stylesheet", href="styles/css/vendor.css")
+    link(rel="stylesheet", href="styles/css/main.css")
+  body
+
+    header.mobile-header
+      .grid.grid--container
+        .row.row--sm-center
+          .col.col--xs-6
+            a(href="./pages.html").logo.logo--white
+          .col.col--xs-6
+            .mobile-menu-toggle
+              span
+              span
+              span
+
+    .mobile-menu
+      .grid.grid--container
+        .mobile-menu__links
+          .mobile-menu__link
+            a(href="") О компании
+          .mobile-menu__link
+            a(href="") Новости
+          .mobile-menu__link
+            a(href="") Контакты
+        nav.mobile-navigation
+          .mobile-navigation__accordion
+            a(href="").mobile-navigation__link Физическим лицам
+            .mobile-navigation__arrow
+              i.fa.fa-angle-down
+            .mobile-navigation__body
+              .mobile-menu__link
+                a(href="") Сообщить показания счетчика
+              .mobile-menu__link
+                a(href="") Платежные сервисы
+              .mobile-menu__link
+                a(href="") Оформить электронную квитанцию
+              .mobile-menu__link
+                a(href="") Населению
+              .mobile-menu__link
+                a(href="") Газ для новичков
+              .mobile-menu__link
+                a(href="") Учет газа
+              .mobile-menu__link
+                a(href="") Газификация домовладения
+          .mobile-navigation__accordion
+            a(href="").mobile-navigation__link Юридическим лицам
+            .mobile-navigation__arrow
+              i.fa.fa-angle-down
+            .mobile-navigation__body
+              .mobile-menu__link
+                a(href="") Тендеры
+              .mobile-menu__link
+                a(href="") Реализация газа юридическим лицам
+              .mobile-menu__link
+                a(href="") Газификация
+        a(href="").btn.btn--white Личный кабинет
+        .contact
+          .contact__phone 8 (861) 262-04-74
+          .contact__trust Телефон доверия
+
+
+    header.main-header
+      .grid.grid--container
+        .row.row--sm-center
+          .col.col--sm-2
+            a(href="./pages.html").logo
+          .col.col--sm-3.col--xl-offset-1
+            .main-header__contacts.contact
+              .contact__phone 8 (861) 262-04-74
+              .contact__trust Телефон доверия
+          .col.col--sm-5.col--sm-offset-1
+            nav.navbar
+              a.navbar__link(href="") О компании
+              a.navbar__link(href="") Новости
+              a.navbar__link(href="") Контакты
+
+    nav.navigation
+      .grid.grid--container
+        .navigation__container
+          .navigation__link
+            .dropdown
+              a(href="").dropdown__title Физическим лицам
+              .dropdown__body
+                a(href="").dropdown__link Сообщить показания счетчика
+                a(href="").dropdown__link Платежные сервисы
+                a(href="").dropdown__link Оформить электронную квитанцию
+                a(href="").dropdown__link Населению
+                a(href="").dropdown__link Газ для новичков
+                a(href="").dropdown__link Учет газа
+                a(href="").dropdown__link Газификация домовладения
+          .navigation__link
+            .dropdown
+              a(href="").dropdown__title Юридическим лицам
+              .dropdown__body
+                a(href="").dropdown__link Тендеры
+                a(href="").dropdown__link Реализация газа юридическим лицам
+                a(href="").dropdown__link Газификация
+          .navigation__link
+            .dropdown
+              a(href="").dropdown__title Личный кабинет
+        form.search
+          .search__icon.search__icon--disabled
+            input(type="submit" id="search-submit")
+            label(for="search-submit")
+              i.fa.fa-search
+          .search__body
+            input(type="text").search__input
+            .search__close
+              span ×
+
+    main
+      block content
+
+    footer.main-footer
+      .grid.grid--container
+        .row
+          .col.col--sm-4
+            .contact
+              .contact__phone 8 (861) 262-04-74
+              .contact__trust Телефон доверия
+              .contact__email Эл. почта: krasnodarrg@krk-rg.ru
+          .col.col--sm-4
+            .main-footer__links.main-footer__links--type-1
+              .main-footer__link
+                a(href="") О компании
+              .main-footer__link
+                a(href="") Физическим лицам
+              .main-footer__link
+                a(href="") Юридическим лицам
+              .main-footer__link
+                a(href="") Новости
+              .main-footer__link
+                a(href="") Публикации в СМИ
+              .main-footer__link
+                a(href="") Контакты
+              .main-footer__link
+                a(href="") Клуб «Газпром на Кубани»
+              .main-footer__link
+                a(href="") Полезные ссылки
+          .col.col--sm-4
+            .main-footer__links.main-footer__links--type-2
+              .main-footer__link
+                a(href="") Руководство компании
+              .main-footer__link
+                a(href="") Сообщить показания счетчика
+              .main-footer__link
+                a(href="") Платежные сервисы
+              .main-footer__link
+                a(href="") Оформить электронную квитанцию
+              .main-footer__link
+                a(href="") Участки по работе с потребителями газа
+              .main-footer__link
+                a(href="") Вопрос-ответ
+              .main-footer__link
+                a(href="") Газ для населения
+              .main-footer__link
+                a(href="") Учет газа
+              .main-footer__link
+                a(href="") Объявления
+              .main-footer__link
+                a(href="") Вакансии
+
+      .main-footer__bottom
+        .grid.grid--container
+          .row
+            .col.col--sm-4
+              .wf Создание сайта —
+                a(href="").link Webformula
+            .col.col--sm-4
+              .copy &copy; 2000-2017 ООО «Газпром межрегионгаз Краснодар»
+            .col.col--sm-4
+              .sitemap-link
+                a(href="") Карта сайта
+
+
+    script(src="./js/jquery.min.js")
+    script(src="./js/jquery.easeScroll.js")
+    script(src="./js/slick.min.js")
+    script(src="./js/jquery.magnific-popup.min.js")
+    script(src="./js/flatpickr.min.js")
+    script(src="./js/jquery.magnific-popup.min.js")
+    script(src="./js/jquery.mCustomScrollbar.concat.min.js")
+    script(src="./js/raphael.js")
+    script(src="./js/map.js")
+    script(src="./js/main.js")

@@ -27,6 +27,8 @@ $(document).ready(function() {
 
   // Обычный слайдер (главная)
   $('.slider').slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
     dots: false,
     infinite: true,
     arrows: true,
